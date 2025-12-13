@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -25,6 +26,14 @@ namespace App1
         public Page21()
         {
             this.InitializeComponent();
+        }
+        private async void StartProcess_Click(object sender, RoutedEventArgs e)
+        {
+            for (int i = 0; i <= 100; i++)
+            {
+                MyProgressBar.Value = i;
+                await Task.Delay(50);
+            }
         }
     }
 }

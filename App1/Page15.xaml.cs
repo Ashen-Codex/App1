@@ -26,5 +26,11 @@ namespace App1
         {
             this.InitializeComponent();
         }
+        private void Color_Changed(ColorPicker sender, ColorChangedEventArgs args)
+        {
+            Windows.UI.Color color = args.NewColor;
+            ColorRectangle.Fill = new SolidColorBrush(color);
+            ColorHexTextBlock.Text = $"Цвет: #{color.R:X2}{color.G:X2}{color.B:X2}";
+        }
     }
 }

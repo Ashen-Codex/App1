@@ -9,6 +9,12 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <StackPanel Orientation="Horizontal" 
+            Padding="20" 
+            Spacing="10">
+            <Button Content="Кнопка 1" Width="100" />
+            <Button Content="Кнопка 2" Width="100" />
+            <Button Content="Кнопка 3" Width="100" />
+        </StackPanel>
     </Grid>
 </Page>

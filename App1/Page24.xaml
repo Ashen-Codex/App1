@@ -9,6 +9,8 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Button Content="Кнопка" 
+        ToolTipService.ToolTip="Это подсказка"
+        Padding="20"/>
     </Grid>
 </Page>

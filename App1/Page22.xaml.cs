@@ -26,5 +26,9 @@ namespace App1
         {
             this.InitializeComponent();
         }
+        private void StopLoading_Click(object sender, RoutedEventArgs e)
+        {
+            LoadingRing.IsActive = false;
+        }
     }
 }

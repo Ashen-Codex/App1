@@ -9,6 +9,15 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <StackPanel Padding="20" Spacing="10" HorizontalAlignment="Center">
+            <ProgressRing x:Name="LoadingRing"
+                  IsActive="True"
+                  Width="100"
+                  Height="100"/>
+            <TextBlock Text="Загрузка..." 
+               TextAlignment="Center"
+               FontSize="16"/>
+            <Button Content="Остановить" Click="StopLoading_Click"/>
+        </StackPanel>
     </Grid>
 </Page>

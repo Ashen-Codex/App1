@@ -9,6 +9,20 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid Padding="20" RowSpacing="10" ColumnSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
 
+            <Button Content="Кнопка 1" Grid.Row="0" Grid.Column="0"/>
+            <Button Content="Кнопка 2" Grid.Row="0" Grid.Column="1"/>
+            <Button Content="Кнопка 3" Grid.Row="1" Grid.Column="0"/>
+            <Button Content="Кнопка 4" Grid.Row="1" Grid.Column="1"/>
+        </Grid>
     </Grid>
 </Page>

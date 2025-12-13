@@ -8,7 +8,16 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-
+    <Grid x:Name="RootGrid">
+        <StackPanel Padding="20" Spacing="10">
+            
+            <Border Background="{ThemeResource SystemFillColorAttentionBackgroundBrush}"
+                Padding="12" CornerRadius="4" Visibility="Visible">
+                <TextBlock Text="Это важное сообщение" Foreground="Black" />
+            </Border>
+            <Button Content="Показать успех" Click="ShowSuccess_Click"/>
+        </StackPanel>
     </Grid>
 </Page>
+
+  

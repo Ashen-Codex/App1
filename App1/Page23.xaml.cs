@@ -13,7 +13,6 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace App1
 {
@@ -22,9 +21,16 @@ namespace App1
     /// </summary>
     public sealed partial class Page23 : Page
     {
-        public Page23()
+        private async void ShowSuccess_Click(object sender, RoutedEventArgs e)
         {
-            this.InitializeComponent();
+            var dialog = new ContentDialog
+            {
+                Title = "Успех",
+                Content = "Операция выполнена успешно!",
+                CloseButtonText = "OK"
+            };
+            await dialog.ShowAsync();
         }
     }
+    
 }

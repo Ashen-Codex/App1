@@ -28,7 +28,7 @@ namespace App1
         }
         private void Volume_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
-            VolumeValueTextBlock.Text = $"Громкость: {(int)VolumeSlider.Value}";
+            VolumeValueTextBlock.Text = $"Громкость: {(int)e.NewValue}";
         }
     }
 }

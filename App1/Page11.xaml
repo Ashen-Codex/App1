@@ -12,14 +12,14 @@
         <StackPanel Padding="20" Spacing="10">
             <TextBlock Text="Громкость:" FontSize="16" FontWeight="Bold"/>
             <Slider x:Name="VolumeSlider"
-            Minimum="0"
-            Maximum="100"
-            Value="50"
-            ValueChanged="Volume_ValueChanged"
-            Width="300"/>
+                    Minimum="0"
+                    Maximum="100"
+                    Value="50"
+                    ValueChanged="Volume_ValueChanged"
+                    Width="300"/>
             <TextBlock x:Name="VolumeValueTextBlock" 
-               Text="Громкость: 50" 
-               FontSize="14"/>
+                       Text="Громкость: 50" 
+                       FontSize="14"/>
         </StackPanel>
     </Grid>
 </Page>

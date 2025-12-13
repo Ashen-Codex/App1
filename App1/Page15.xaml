@@ -9,6 +9,17 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <StackPanel Padding="20" Spacing="10">
+            <TextBlock Text="Выберите цвет:" FontSize="16" FontWeight="Bold"/>
+            <ColorPicker x:Name="ColorSelection"
+                 ColorChanged="Color_Changed"
+                 IsAlphaEnabled="False"/>
+            <Rectangle x:Name="ColorRectangle"
+               Width="100"
+               Height="100"
+               Fill="Red"
+               Margin="0,10,0,0"/>
+            <TextBlock x:Name="ColorHexTextBlock" Margin="0,10,0,0"/>
+        </StackPanel>
     </Grid>
 </Page>
