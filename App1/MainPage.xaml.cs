@@ -12,15 +12,6 @@ namespace App1
         {
             InitializeComponent();
         }
-        private void MyButton_Click(object sender, RoutedEventArgs e)
-        {
-            ContentDialog dialog = new ContentDialog
-            {
-                Title = "Событие",
-                Content = "Кнопка была нажата!",
-                PrimaryButtonText = "ОК"
-            };
-            _ = dialog.ShowAsync();
-        }
+        
     }
 }

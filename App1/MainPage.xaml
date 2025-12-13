@@ -9,11 +9,20 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Button x:Name="MyButton" 
-        Content="Нажми меня" 
-        Click="MyButton_Click"
-        Width="200" 
-        Height="50"
-        FontSize="18"/>
+        <NavigationView>
+
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="Page1"/>
+
+
+                <NavigationViewItem Content="Page2">
+                    <NavigationViewItem.Icon>
+                        <BitmapIcon UriSource=""/>
+                        
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>              
+            </NavigationView.MenuItems>
+        </NavigationView>
+            
     </Grid>
 </Page>
