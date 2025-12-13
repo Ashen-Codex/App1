@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +26,19 @@ namespace App1
         public Page8()
         {
             this.InitializeComponent();
+        }
+        private void DarkMode_Toggled(object sender, RoutedEventArgs e)
+        {
+            if (DarkModeToggle.IsOn)
+            {
+                StatusTextBlock.Text = "Темный режим включен";
+                StatusTextBlock.Foreground = new SolidColorBrush(Colors.White);
+            }
+            else
+            {
+                StatusTextBlock.Text = "Темный режим отключен";
+                StatusTextBlock.Foreground = new SolidColorBrush(Colors.Black);
+            }
         }
     }
 }

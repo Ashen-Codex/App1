@@ -26,5 +26,13 @@ namespace App1
         {
             this.InitializeComponent();
         }
+        private void ShowGender_Click(object sender, RoutedEventArgs e)
+        {
+            string selected = "Пол не выбран";
+            if (RadioMale.IsChecked == true) selected = "Выбран: Мужской";
+            else if (RadioFemale.IsChecked == true) selected = "Выбран: Женский";
+            else if (RadioOther.IsChecked == true) selected = "Выбран: Другое";
+            GenderTextBlock.Text = selected;
+        }
     }
 }

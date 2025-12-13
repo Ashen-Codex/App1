@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="App1.Page10"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Padding="20" Spacing="10">
+            <TextBlock Text="Выберите животное:" FontSize="16" FontWeight="Bold"/>
+            <ListBox x:Name="AnimalListBox" 
+             SelectionChanged="Animal_SelectionChanged"
+             Height="150">
+                <x:String>Кошка</x:String>
+                <x:String>Собака</x:String>
+                <x:String>Птица</x:String>
+                <x:String>Рыба</x:String>
+                <x:String>Кролик</x:String>
+            </ListBox>
+            <TextBlock x:Name="SelectedAnimalTextBlock" Margin="0,10,0,0"/>
+        </StackPanel>
+    </Grid>
+</Page>

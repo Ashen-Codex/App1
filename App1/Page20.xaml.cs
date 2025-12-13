@@ -20,15 +20,11 @@ namespace App1
     /// <summary>
     /// Пустая страница, которую можно использовать саму по себе или для перехода внутри фрейма.
     /// </summary>
-    public sealed partial class Page11 : Page
+    public sealed partial class Page20 : Page
     {
-        public Page11()
+        public Page20()
         {
             this.InitializeComponent();
-        }
-        private void Volume_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
-        {
-            VolumeValueTextBlock.Text = $"Громкость: {(int)VolumeSlider.Value}";
         }
     }
 }

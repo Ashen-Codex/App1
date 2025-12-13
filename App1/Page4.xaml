@@ -9,6 +9,12 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <StackPanel Spacing="10" Padding="20">
+            <PasswordBox x:Name="PasswordInput" 
+                 PlaceholderText="Введите пароль"/>
+            <Button Content="Проверить пароль" 
+            Click="CheckPassword_Click"/>
+            <TextBlock x:Name="ResultTextBlock" Foreground="Red"/>
+        </StackPanel>
     </Grid>
 </Page>

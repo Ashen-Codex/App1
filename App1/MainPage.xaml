@@ -9,20 +9,114 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <NavigationView>
-
-            <NavigationView.MenuItems>
-                <NavigationViewItem Content="Page1"/>
-
-
-                <NavigationViewItem Content="Page2">
-                    <NavigationViewItem.Icon>
-                        <BitmapIcon UriSource=""/>
-                        
-                    </NavigationViewItem.Icon>
-                </NavigationViewItem>              
+        
+            <NavigationView x:Name="navView"
+                    Loaded="NavigationView_Loaded"
+                    SelectionChanged="NavigationView_SelectionChanged">
+                <NavigationView.MenuItems>
+                <NavigationViewItem Content="Задание 1" Tag="Page1" />
+                <NavigationViewItem Content="Задание 2" Tag="Page2" />
+                <NavigationViewItem Content="Задание 3" Tag="Page3" />
+                <NavigationViewItem Content="Задание 4" Tag="Page4" />
+                <NavigationViewItem Content="Задание 5" Tag="Page5" />
+                <NavigationViewItem Content="Задание 6" Tag="Page6" />
+                <NavigationViewItem Content="Задание 7" Tag="Page7" />
+                <NavigationViewItem Content="Задание 8" Tag="Page8" />
+                <NavigationViewItem Content="Задание 9" Tag="Page9" />
+                <NavigationViewItem Content="Задание 10" Tag="Page10" />
+                <NavigationViewItem Content="Задание 11" Tag="Page11" />
+                <NavigationViewItem Content="Задание 12" Tag="Page12" />
+                <NavigationViewItem Content="Задание 13" Tag="Page13" />
+                <NavigationViewItem Content="Задание 14" Tag="Page14" />
+                <NavigationViewItem Content="Задание 15" Tag="Page15" />
+                <NavigationViewItem Content="Задание 16" Tag="Page16" />
+                <NavigationViewItem Content="Задание 17" Tag="Page17" />
+                <NavigationViewItem Content="Задание 18" Tag="Page18" />
+                <NavigationViewItem Content="Задание 19" Tag="Page19" />
+                <NavigationViewItem Content="Задание 20" Tag="Page20" />
+                <NavigationViewItem Content="Задание 21" Tag="Page21" />
+                <NavigationViewItem Content="Задание 22" Tag="Page22" />
+                <NavigationViewItem Content="Задание 23" Tag="Page23" />
+                <NavigationViewItem Content="Задание 24" Tag="Page24" />
+                <NavigationViewItem Content="Задание 25" Tag="Page25" />
+                <NavigationViewItem Content="Задание 26" Tag="Page26" />
+                <NavigationViewItem Content="Задание 27" Tag="Page27" />
+                <NavigationViewItem Content="Задание 28" Tag="Page28" />
+                <NavigationViewItem Content="Задание 29" Tag="Page29" />
+                <NavigationViewItem Content="Задание 30" Tag="Page30" />
+                <NavigationViewItem Content="Задание 31" Tag="Page31" />
+                <NavigationViewItem Content="Задание 32" Tag="Page32" />
+                <NavigationViewItem Content="Задание 33" Tag="Page33" />
+                <NavigationViewItem Content="Задание 34" Tag="Page34" />
+                <NavigationViewItem Content="Задание 35" Tag="Page35" />
+                <NavigationViewItem Content="Задание 36" Tag="Page36" />
+                <NavigationViewItem Content="Задание 37" Tag="Page37" />
+                <NavigationViewItem Content="Задание 38" Tag="Page38" />
+                <NavigationViewItem Content="Задание 39" Tag="Page39" />
+                <NavigationViewItem Content="Задание 40" Tag="Page40" />
+                <NavigationViewItem Content="Задание 41" Tag="Page41" />
+                <NavigationViewItem Content="Задание 42" Tag="Page42" />
+                <NavigationViewItem Content="Задание 43" Tag="Page43" />
+                <NavigationViewItem Content="Задание 44" Tag="Page44" />
+                <NavigationViewItem Content="Задание 45" Tag="Page45" />
+                <NavigationViewItem Content="Задание 46" Tag="Page46" />
+                <NavigationViewItem Content="Задание 47" Tag="Page47" />
+                <NavigationViewItem Content="Задание 48" Tag="Page48" />
+                <NavigationViewItem Content="Задание 49" Tag="Page49" />
+                <NavigationViewItem Content="Задание 50" Tag="Page50" />
+                <NavigationViewItem Content="Задание 51" Tag="Page51" />
+                <NavigationViewItem Content="Задание 52" Tag="Page52" />
+                <NavigationViewItem Content="Задание 53" Tag="Page53" />
+                <NavigationViewItem Content="Задание 54" Tag="Page54" />
+                <NavigationViewItem Content="Задание 55" Tag="Page55" />
+                <NavigationViewItem Content="Задание 56" Tag="Page56" />
+                <NavigationViewItem Content="Задание 57" Tag="Page57" />
+                <NavigationViewItem Content="Задание 58" Tag="Page58" />
+                <NavigationViewItem Content="Задание 59" Tag="Page59" />
+                <NavigationViewItem Content="Задание 60" Tag="Page60" />
+                <NavigationViewItem Content="Задание 61" Tag="Page61" />
+                <NavigationViewItem Content="Задание 62" Tag="Page62" />
+                <NavigationViewItem Content="Задание 63" Tag="Page63" />
+                <NavigationViewItem Content="Задание 64" Tag="Page64" />
+                <NavigationViewItem Content="Задание 65" Tag="Page65" />
+                <NavigationViewItem Content="Задание 66" Tag="Page66" />
+                <NavigationViewItem Content="Задание 67" Tag="Page67" />
+                <NavigationViewItem Content="Задание 68" Tag="Page68" />
+                <NavigationViewItem Content="Задание 69" Tag="Page69" />
+                <NavigationViewItem Content="Задание 70" Tag="Page70" />
+                <NavigationViewItem Content="Задание 71" Tag="Page71" />
+                <NavigationViewItem Content="Задание 72" Tag="Page72" />
+                <NavigationViewItem Content="Задание 73" Tag="Page73" />
+                <NavigationViewItem Content="Задание 74" Tag="Page74" />
+                <NavigationViewItem Content="Задание 75" Tag="Page75" />
+                <NavigationViewItem Content="Задание 76" Tag="Page76" />
+                <NavigationViewItem Content="Задание 77" Tag="Page77" />
+                <NavigationViewItem Content="Задание 78" Tag="Page78" />
+                <NavigationViewItem Content="Задание 79" Tag="Page79" />
+                <NavigationViewItem Content="Задание 80" Tag="Page80" />
+                <NavigationViewItem Content="Задание 81" Tag="Page81" />
+                <NavigationViewItem Content="Задание 82" Tag="Page82" />
+                <NavigationViewItem Content="Задание 83" Tag="Page83" />
+                <NavigationViewItem Content="Задание 84" Tag="Page84" />
+                <NavigationViewItem Content="Задание 85" Tag="Page85" />
+                <NavigationViewItem Content="Задание 86" Tag="Page86" />
+                <NavigationViewItem Content="Задание 87" Tag="Page87" />
+                <NavigationViewItem Content="Задание 88" Tag="Page88" />
+                <NavigationViewItem Content="Задание 89" Tag="Page89" />
+                <NavigationViewItem Content="Задание 90" Tag="Page90" />
+                <NavigationViewItem Content="Задание 91" Tag="Page91" />
+                <NavigationViewItem Content="Задание 92" Tag="Page92" />
+                <NavigationViewItem Content="Задание 93" Tag="Page93" />
+                <NavigationViewItem Content="Задание 94" Tag="Page94" />
+                <NavigationViewItem Content="Задание 95" Tag="Page95" />
+                <NavigationViewItem Content="Задание 96" Tag="Page96" />
+                <NavigationViewItem Content="Задание 97" Tag="Page97" />
+                <NavigationViewItem Content="Задание 98" Tag="Page98" />
+                <NavigationViewItem Content="Задание 99" Tag="Page99" />
+                <NavigationViewItem Content="Задание 100" Tag="Page100" />
             </NavigationView.MenuItems>
-        </NavigationView>
-            
+                <Frame x:Name="ContentFrame" />
+            </NavigationView>
+        
     </Grid>
 </Page>

@@ -20,15 +20,18 @@ namespace App1
     /// <summary>
     /// Пустая страница, которую можно использовать саму по себе или для перехода внутри фрейма.
     /// </summary>
-    public sealed partial class Page11 : Page
+    public sealed partial class Page10 : Page
     {
-        public Page11()
+        public Page10()
         {
             this.InitializeComponent();
         }
-        private void Volume_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        private void Animal_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            VolumeValueTextBlock.Text = $"Громкость: {(int)VolumeSlider.Value}";
+            if (AnimalListBox.SelectedItem != null)
+            {
+                SelectedAnimalTextBlock.Text = "Выбрано: " + AnimalListBox.SelectedItem.ToString();
+            }
         }
     }
 }

@@ -9,6 +9,11 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <StackPanel Padding="20" Spacing="10">
+            <TextBlock Text="Введите возраст:" FontSize="16" FontWeight="Bold"/>
+            <TextBox x:Name="AgeTextBox" InputScope="Number" PlaceholderText="Например: 25"/>
+            <Button Content="Подтвердить" Click="ConfirmAge_Click"/>
+            <TextBlock x:Name="AgeConfirmTextBlock" Margin="0,10,0,0" TextWrapping="Wrap"/>
+        </StackPanel>
     </Grid>
 </Page>

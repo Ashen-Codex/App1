@@ -9,6 +9,13 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <StackPanel Padding="20" Spacing="10">
+            <TextBlock Text="Выберите интересы:" FontSize="18" FontWeight="Bold"/>
+            <CheckBox x:Name="CheckSports" Content="Спорт"/>
+            <CheckBox x:Name="CheckMusic" Content="Музыка"/>
+            <CheckBox x:Name="CheckReading" Content="Чтение"/>
+            <Button Content="Показать результат" Click="ShowInterests_Click"/>
+            <TextBlock x:Name="InterestsTextBlock" Margin="0,10,0,0"/>
+        </StackPanel>
     </Grid>
 </Page>

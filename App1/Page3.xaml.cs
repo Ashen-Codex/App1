@@ -26,5 +26,9 @@ namespace App1
         {
             this.InitializeComponent();
         }
+        private void InputTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            OutputTextBlock.Text = "Введено: " + InputTextBox.Text;
+        }
     }
 }

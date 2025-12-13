@@ -26,5 +26,12 @@ namespace App1
         {
             this.InitializeComponent();
         }
+        private void City_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (CityComboBox.SelectedItem != null)
+            {
+                SelectedCityTextBlock.Text = "Выбран город: " + CityComboBox.SelectedItem.ToString();
+            }
+        }
     }
 }

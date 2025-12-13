@@ -9,6 +9,12 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <StackPanel Padding="20" Spacing="10">
+            <TextBlock Text="Выберите время встречи:" FontSize="16" FontWeight="Bold"/>
+            <TimePicker x:Name="MeetingTimePicker"
+                Header="Время встречи"
+                TimeChanged="MeetingTime_Changed"/>
+            <TextBlock x:Name="SelectedTimeTextBlock" Margin="0,10,0,0"/>
+        </StackPanel>
     </Grid>
 </Page>

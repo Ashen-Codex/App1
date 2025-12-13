@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +26,19 @@ namespace App1
         public Page4()
         {
             this.InitializeComponent();
+        }
+        private void CheckPassword_Click(object sender, RoutedEventArgs e)
+        {
+            string password = PasswordInput.Password;
+            if (password == "12345")
+            {
+                ResultTextBlock.Text = "Пароль верный!";
+                ResultTextBlock.Foreground = new SolidColorBrush(Colors.Green);
+            }
+            else
+            {
+                ResultTextBlock.Text = "Пароль неверный!";
+            }
         }
     }
 }

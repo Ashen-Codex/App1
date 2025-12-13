@@ -9,6 +9,13 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <StackPanel Spacing="10" Padding="20">
+            <TextBox x:Name="InputTextBox" 
+             PlaceholderText="Введите текст..."
+             TextChanged="InputTextBox_TextChanged"/>
+            <TextBlock x:Name="OutputTextBlock" 
+               Text="Введено: " 
+               FontSize="16"/>
+        </StackPanel>
     </Grid>
 </Page>

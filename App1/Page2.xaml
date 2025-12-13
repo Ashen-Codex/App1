@@ -9,6 +9,11 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <TextBlock Margin="20" LineHeight="30">
+    <Run Text="Обычный текст " />
+    <Run Text="Жирный текст" FontWeight="Bold" Foreground="Blue" />
+    <Run Text=" и " />
+    <Run Text="курсивный" FontStyle="Italic" Foreground="Red" />
+        </TextBlock>
     </Grid>
 </Page>

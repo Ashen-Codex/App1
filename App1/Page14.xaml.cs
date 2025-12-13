@@ -26,5 +26,10 @@ namespace App1
         {
             this.InitializeComponent();
         }
+        private void MeetingTime_Changed(TimePicker sender, TimePickerValueChangedEventArgs args)
+        {
+            TimeSpan time = sender.Time;
+            SelectedTimeTextBlock.Text = $"Выбрано время: {time:hh\:mm}";
+        }
     }
 }

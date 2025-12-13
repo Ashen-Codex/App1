@@ -9,6 +9,8 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <HyperlinkButton NavigateUri="https://www.microsoft.com"
+                 Content="Перейти на Microsoft"
+                 Margin="20"/>
     </Grid>
 </Page>

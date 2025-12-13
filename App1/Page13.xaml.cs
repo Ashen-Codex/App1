@@ -26,5 +26,13 @@ namespace App1
         {
             this.InitializeComponent();
         }
+        private void Birthdate_Changed(DatePicker sender, DatePickerValueChangedEventArgs args)
+        {
+            if (sender.Date != null)
+            {
+                DateTime date = sender.Date.DateTime;
+                SelectedDateTextBlock.Text = $"Выбрана дата: {date:dd.MM.yyyy}";
+            }
+        }
     }
 }

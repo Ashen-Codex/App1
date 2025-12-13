@@ -1,30 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
+﻿using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
-
-// Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace App1
 {
-    /// <summary>
-    /// Пустая страница, которую можно использовать саму по себе или для перехода внутри фрейма.
-    /// </summary>
     public sealed partial class Page12 : Page
     {
         public Page12()
         {
             this.InitializeComponent();
+        }
+
+        private void ConfirmAge_Click(object sender, RoutedEventArgs e)
+        {
+            if (int.TryParse(AgeTextBox.Text, out int age))
+            {
+                if (age >= 0 && age <= 120)
+                {
+                    AgeConfirmTextBlock.Text = $"Ваш возраст: {age} лет";
+                }
+                else
+                {
+                    AgeConfirmTextBlock.Text = "Возраст должен быть от 0 до 120 лет.";
+                }
+            }
+            else
+            {
+                AgeConfirmTextBlock.Text = "Пожалуйста, введите корректное число.";
+            }
         }
     }
 }

@@ -26,5 +26,13 @@ namespace App1
         {
             this.InitializeComponent();
         }
+        private void ShowInterests_Click(object sender, RoutedEventArgs e)
+        {
+            string interests = "Выбранные интересы: ";
+            if (CheckSports.IsChecked == true) interests += "Спорт ";
+            if (CheckMusic.IsChecked == true) interests += "Музыка ";
+            if (CheckReading.IsChecked == true) interests += "Чтение ";
+            InterestsTextBlock.Text = interests;
+        }
     }
 }
