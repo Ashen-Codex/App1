@@ -9,6 +9,17 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20">
+            <TextBlock Text="Выберите время встречи" FontSize="20" />
 
+            <TimePicker x:Name="MeetingTimePicker"
+                    Header="Время встречи"
+                    ClockIdentifier="24HourClock" />
+
+            <Button x:Name="ConfirmButton"
+                Content="Подтвердить"
+                Click="ConfirmButton_Click"
+                Width="200" />
+        </StackPanel>
     </Grid>
 </Page>
