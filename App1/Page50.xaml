@@ -9,6 +9,13 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <StackPanel>
+            <Button x:Name="TargetButton" Content="Кнопка"/>
+            <TeachingTip Target="{x:Bind TargetButton}"
+                 Title="Советы"
+                 Subtitle="Это полезный совет для пользователя"
+                 IsOpen="True"
+                 PreferredPlacement="Bottom"/>
+        </StackPanel>
     </Grid>
 </Page>

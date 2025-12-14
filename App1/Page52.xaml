@@ -34,13 +34,7 @@
             <ListView 
                 x:Name="ItemsListView"
                 Height="200"
-                Width="350">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <TextBlock Text="{Binding Name}" FontSize="16"/>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                Width="350"/>
 
         </StackPanel>
     </Grid>
