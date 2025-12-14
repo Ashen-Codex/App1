@@ -9,17 +9,18 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <StackPanel Padding="20" Spacing="10">
-            <TextBlock Text="Громкость:" FontSize="16" FontWeight="Bold"/>
+        <StackPanel Spacing="20" Margin="20">
+            <TextBlock Text="Громкость" FontSize="18"/>
             <Slider x:Name="VolumeSlider"
-                    Minimum="0"
-                    Maximum="100"
-                    Value="50"
-                    ValueChanged="Volume_ValueChanged"
-                    Width="300"/>
-            <TextBlock x:Name="VolumeValueTextBlock" 
-                       Text="Громкость: 50" 
-                       FontSize="14"/>
+                Minimum="0"
+                Maximum="100"
+                Value="50"
+                SmallChange="1"
+                LargeChange="10"
+                ValueChanged="VolumeSlider_ValueChanged"/>
+            <TextBlock x:Name="VolumeValueText"
+                   Text="50"
+                   FontSize="16"/>
         </StackPanel>
     </Grid>
 </Page>

@@ -28,15 +28,10 @@ namespace App1
         }
         private void ConfirmButton_Click(object sender, RoutedEventArgs e)
         {
-            // Получаем выбранное время
             var selectedTime = MeetingTimePicker.Time;
 
-            // Форматируем как строку (например: "14:30")
             string timeString = selectedTime.ToString(@"hh\:mm");
-            // Или для 24-часового формата без ведущего нуля — можно использовать форматирование вручную:
-            // string timeString = $"{selectedTime.Hours:D2}:{selectedTime.Minutes:D2}";
-
-            // Показываем сообщение
+           
             var dialog = new ContentDialog
             {
                 Title = "Выбранное время",

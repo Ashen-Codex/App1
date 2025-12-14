@@ -21,16 +21,11 @@ namespace App1
     /// </summary>
     public sealed partial class Page23 : Page
     {
-        private async void ShowSuccess_Click(object sender, RoutedEventArgs e)
+        public Page23()
         {
-            var dialog = new ContentDialog
-            {
-                Title = "Успех",
-                Content = "Операция выполнена успешно!",
-                CloseButtonText = "OK"
-            };
-            await dialog.ShowAsync();
+            this.InitializeComponent();
         }
+        
     }
     
 }

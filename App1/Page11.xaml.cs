@@ -26,9 +26,15 @@ namespace App1
         {
             this.InitializeComponent();
         }
-        private void Volume_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        private void VolumeSlider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
-            VolumeValueTextBlock.Text = $"Громкость: {(int)e.NewValue}";
+            
+            if (VolumeValueText != null)
+            {
+                VolumeValueText.Text = ((int)e.NewValue).ToString();
+            }
+
+           
         }
     }
 }
