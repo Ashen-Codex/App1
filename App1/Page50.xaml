@@ -10,13 +10,6 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <StackPanel>
-            <Button x:Name="TargetButton" Content="Кнопка"/>
-            <muxc:TeachingTip 
-                    Target="{x:Bind TargetButton}"
-                    Title="Подсказка"
-                    Subtitle="Это кнопка 'Кнопка'"
-                    IsLightDismissEnabled="True"/>  
-        </StackPanel>   
+        
     </Grid>
 </Page>
