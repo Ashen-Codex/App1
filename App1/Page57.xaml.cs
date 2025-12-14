@@ -26,5 +26,22 @@ namespace App1
         {
             this.InitializeComponent();
         }
+
+        private void MainPage_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            if (e.NewSize.Width < 600)
+            {
+                // Мобильный макет
+                MainGrid.ColumnDefinitions.Clear();
+                MainGrid.ColumnDefinitions.Add(new ColumnDefinition());
+            }
+            else
+            {
+                // Десктопный макет
+                MainGrid.ColumnDefinitions.Clear();
+                MainGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+                MainGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            }
+        }
     }
 }

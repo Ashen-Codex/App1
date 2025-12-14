@@ -9,6 +9,23 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid x:Name="MainGrid">
+            <StackPanel 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            Spacing="10">
 
+                <TextBlock 
+                Text="Задание 57: Адаптивный дизайн"
+                FontSize="20"
+                FontWeight="Bold"/>
+
+                <TextBlock 
+                x:Name="LayoutInfoText"
+                Text="Ожидание изменения размера..."
+                FontSize="16"
+                Foreground="DarkBlue"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Page>

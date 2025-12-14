@@ -9,6 +9,17 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Canvas Background="LightGray" Width="400" Height="300">
+            <Ellipse Canvas.Left="50" 
+             Canvas.Top="50" 
+             Width="100" 
+             Height="100" 
+             Fill="Red"/>
+            <Rectangle Canvas.Left="200" 
+               Canvas.Top="100" 
+               Width="100" 
+               Height="100" 
+               Fill="Blue"/>
+        </Canvas>
     </Grid>
 </Page>

@@ -26,5 +26,20 @@ namespace App1
         {
             this.InitializeComponent();
         }
+
+        private void Play_Click(object sender, RoutedEventArgs e)
+        {
+            VideoPlayer.Play();
+        }
+
+        private void Pause_Click(object sender, RoutedEventArgs e)
+        {
+            VideoPlayer.Pause();
+        }
+
+        private void Stop_Click(object sender, RoutedEventArgs e)
+        {
+            VideoPlayer.Stop();
+        }
     }
 }

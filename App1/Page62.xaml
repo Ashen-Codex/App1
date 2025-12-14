@@ -9,6 +9,16 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <StackPanel Padding="20" Spacing="10">
+            <MediaElement x:Name="VideoPlayer"
+                  Source="ms-appx:///Assets/content-warning-685253d6_Yv2L3ii5.webm"
+                  Height="500"
+                  Width="600"/>
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <Button Content="Воспроизвести" Click="Play_Click"/>
+                <Button Content="Пауза" Click="Pause_Click"/>
+                <Button Content="Остановить" Click="Stop_Click"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Page>

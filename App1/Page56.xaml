@@ -9,6 +9,9 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <TextBlock 
+                Text="Здесь меняется стиль проекта"
+                FontSize="16"
+                Foreground="DarkBlue"/>
     </Grid>
 </Page>

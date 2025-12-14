@@ -9,6 +9,16 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Pivot Title="Мое приложение">
+            <PivotItem Header="Главная">
+                <TextBlock Text="Содержимое главной" Padding="20"/>
+            </PivotItem>
+            <PivotItem Header="Профиль">
+                <TextBlock Text="Содержимое профиля" Padding="20"/>
+            </PivotItem>
+            <PivotItem Header="Параметры">
+                <TextBlock Text="Содержимое параметров" Padding="20"/>
+            </PivotItem>
+        </Pivot>
     </Grid>
 </Page>
