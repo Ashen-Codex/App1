@@ -2,6 +2,7 @@
     x:Class="App1.Page50"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     xmlns:local="using:App1"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -11,11 +12,11 @@
     <Grid>
         <StackPanel>
             <Button x:Name="TargetButton" Content="Кнопка"/>
-            <TeachingTip Target="{x:Bind TargetButton}"
-                 Title="Советы"
-                 Subtitle="Это полезный совет для пользователя"
-                 IsOpen="True"
-                 PreferredPlacement="Bottom"/>
-        </StackPanel>
+            <muxc:TeachingTip 
+                    Target="{x:Bind TargetButton}"
+                    Title="Подсказка"
+                    Subtitle="Это кнопка 'Кнопка'"
+                    IsLightDismissEnabled="True"/>  
+        </StackPanel>   
     </Grid>
 </Page>
