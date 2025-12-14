@@ -9,6 +9,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <DropDownButton Content="Меню" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <DropDownButton.Flyout>
+                <MenuFlyout>
+                    <MenuFlyoutItem Text="Параметр 1"/>
+                    <MenuFlyoutItem Text="Параметр 2"/>
+                    <MenuFlyoutItem Text="Параметр 3"/>
+                </MenuFlyout>
+            </DropDownButton.Flyout>
+        </DropDownButton>
     </Grid>
 </Page>

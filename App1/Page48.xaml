@@ -9,6 +9,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <SplitButton Content="Действие"
+             Click="MainAction_Click" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <SplitButton.Flyout>
+                <MenuFlyout>
+                    <MenuFlyoutItem Text="Опция 1"/>
+                    <MenuFlyoutItem Text="Опция 2"/>
+                </MenuFlyout>
+            </SplitButton.Flyout>
+        </SplitButton>
     </Grid>
 </Page>

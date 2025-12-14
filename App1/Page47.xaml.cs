@@ -26,5 +26,31 @@ namespace App1
         {
             this.InitializeComponent();
         }
+
+
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("Добавить");
+        }
+
+        private void Edit_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("Изменить");
+        }
+
+        private void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("Удалить");
+        }
+
+        private void Settings_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("Настройки");
+        }
+
+        private void About_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("О приложении");
+        }
     }
 }

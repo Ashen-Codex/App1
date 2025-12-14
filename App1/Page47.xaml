@@ -9,6 +9,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <CommandBar>
+            <AppBarButton Icon="Add" Label="Добавить" Click="Add_Click"/>
+            <AppBarButton Icon="Edit" Label="Изменить" Click="Edit_Click"/>
+            <AppBarButton Icon="Delete" Label="Удалить" Click="Delete_Click"/>
+            <CommandBar.SecondaryCommands>
+                <AppBarButton Label="Параметры" Click="Settings_Click"/>
+                <AppBarButton Label="О приложении" Click="About_Click"/>
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
     </Grid>
 </Page>
