@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -21,11 +22,17 @@ namespace App1
     {
         public string Name { get; set; }
         public string Category { get; set; }
+
+        public Item(string name, string category)
+        {
+            Name = name;
+            Category = category;
+        }
     }
 
     public sealed partial class Page52 : Page
     {
-        private List<Item> allItems;
+        private ObservableCollection<Item> allItems;
 
         public Page52()
         {
@@ -35,29 +42,24 @@ namespace App1
 
         private void LoadData()
         {
-
-            allItems = new List<Item>
+            allItems = new ObservableCollection<Item>
             {
-                new Item { Name = "Элемент A", Category = "Категория 1" },
-                new Item { Name = "Элемент B", Category = "Категория 1" },
-                new Item { Name = "Элемент C", Category = "Категория 2" },
-                new Item { Name = "Элемент D", Category = "Категория 2" },
-                new Item { Name = "Элемент E", Category = "Категория 3" },
-                new Item { Name = "Элемент F", Category = "Категория 3" }
+                new Item("Элемент A", "Категория 1"),
+                new Item("Элемент B", "Категория 1"),
+                new Item("Элемент C", "Категория 2"),
+                new Item("Элемент D", "Категория 2"),
+                new Item("Элемент E", "Категория 3"),
+                new Item("Элемент F", "Категория 3")
             };
 
-
-            var selectedItem = CategoryComboBox.SelectedItem as ComboBoxItem;
-            if (selectedItem == null) return;
-
-            string selectedCategory = selectedItem.Content?.ToString();
+            ItemsListView.ItemsSource = allItems;
         }
 
         private void Category_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            string selectedCategory = (string)CategoryComboBox.SelectedItem;
+            string selectedCategory = CategoryComboBox.SelectedItem as string;
 
-            if (selectedCategory == null)
+            if (string.IsNullOrEmpty(selectedCategory))
                 return;
 
             var filtered = allItems.Where(item => item.Category == selectedCategory).ToList();

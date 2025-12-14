@@ -9,41 +9,39 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Grid>
-            <StackPanel 
+        <StackPanel 
             HorizontalAlignment="Center" 
             VerticalAlignment="Center" 
-            Spacing="40"
-            Width="700">
+            Spacing="15"
+            Width="400">
 
-                <TextBlock 
+            <TextBlock 
                 Text="Задание 52: Взаимодействие между элементами"
                 FontSize="20"
                 FontWeight="Bold"/>
 
-                <TextBlock Text="Выберите категорию:" />
-                <ComboBox 
-                    x:Name="CategoryComboBox"
-                    SelectionChanged="Category_SelectionChanged"
-                    PlaceholderText="Выберите категорию">       
-                    <x:String>Категория 1</x:String>
-                    <x:String>Категория 2</x:String>
-                    <x:String>Категория 3</x:String>
-                </ComboBox>
+            <TextBlock Text="Выберите категорию:" />
+            <ComboBox 
+                x:Name="CategoryComboBox"
+                SelectionChanged="Category_SelectionChanged"
+                PlaceholderText="Выберите категорию">
+                <x:String>Категория 1</x:String>
+                <x:String>Категория 2</x:String>
+                <x:String>Категория 3</x:String>
+            </ComboBox>
 
-                <TextBlock Text="Элементы:" Margin="0,10,0,0"/>
-                <ListView 
+            <TextBlock Text="Элементы:" Margin="0,10,0,0"/>
+            <ListView 
                 x:Name="ItemsListView"
                 Height="200"
                 Width="350">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="{Binding Name}" FontSize="16"/>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Name}" FontSize="16"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
-            </StackPanel>
-        </Grid>
+        </StackPanel>
     </Grid>
 </Page>
