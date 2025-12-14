@@ -9,6 +9,16 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <TextBlock 
+            x:Name="MyTextBlock"
+            local:CustomAttachedProperties.CustomLabel="Это пользовательское свойство"
+            FontSize="20"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"/>
+        <TextBlock 
+            Text="{x:Bind local:CustomAttachedProperties.GetCustomLabel(MyTextBlock), Mode=OneWay}"
+            Margin="0,50,0,0"
+            FontSize="16"
+            Foreground="DarkBlue"/>
     </Grid>
 </Page>

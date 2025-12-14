@@ -9,6 +9,26 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <StackPanel 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            Spacing="20">
 
+            <TextBlock 
+                Text="Задание 67: Диспетчеризация асинхронного кода"
+                FontSize="20"
+                TextAlignment="Center"/>
+
+            <TextBlock 
+                x:Name="ResultTextBlock"
+                Text="Ожидание данных..."
+                FontSize="16"
+                Foreground="DarkBlue"/>
+
+            <Button 
+                Content="Загрузить данные" 
+                Click="LoadDataButton_Click"
+                Width="200"/>
+        </StackPanel>
     </Grid>
 </Page>

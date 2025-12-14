@@ -9,6 +9,16 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Border 
+            Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+            Padding="10"
+            CornerRadius="5">
+            <TextBlock 
+                Text="Текст с системным цветом"
+                Foreground="{ThemeResource ApplicationForegroundThemeBrush}"
+                FontSize="18"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"/>
+        </Border>
     </Grid>
 </Page>

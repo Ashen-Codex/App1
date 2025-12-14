@@ -9,6 +9,19 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <CommandBar>
+            <AppBarToggleButton Icon="Like" 
+                        Label="Нравится" 
+                        Checked="LikeButton_Checked"
+                        Unchecked="LikeButton_Unchecked"/>
+            
+            
+        </CommandBar>
+        <TextBlock 
+                x:Name="StatusTextBlock" 
+                FontSize="20" 
+                TextWrapping="Wrap" 
+                HorizontalAlignment="Center" 
+                Foreground="DarkBlue" />
     </Grid>
 </Page>

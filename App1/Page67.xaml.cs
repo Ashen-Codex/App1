@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -25,6 +26,29 @@ namespace App1
         public Page67()
         {
             this.InitializeComponent();
+        }
+        private void LoadDataButton_Click(object sender, RoutedEventArgs e)
+        {
+            LoadDataFromBackground();
+        }
+
+        private async void LoadDataFromBackground()
+        {
+            await Task.Run(async () =>
+            {
+                var data = await FetchDataAsync();
+
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    ResultTextBlock.Text = data;
+                });
+            });
+        }
+
+        private async Task<string> FetchDataAsync()
+        {
+            await Task.Delay(2000);
+            return "Данные загружены из фонового потока в " + DateTime.Now.ToString("HH:mm:ss");
         }
     }
 }

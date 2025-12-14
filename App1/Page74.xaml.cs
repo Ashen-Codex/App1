@@ -26,5 +26,15 @@ namespace App1
         {
             this.InitializeComponent();
         }
+
+        private void LikeButton_Checked(object sender, RoutedEventArgs e)
+        {
+            StatusTextBlock.Text = "Вам нравится!";
+        }
+
+        private void LikeButton_Unchecked(object sender, RoutedEventArgs e)
+        {
+            StatusTextBlock.Text = "Вам больше не нравится";
+        }
     }
 }

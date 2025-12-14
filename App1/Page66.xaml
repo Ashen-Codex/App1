@@ -9,6 +9,13 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Button Content="Нажми" 
+        Width="100" 
+        Height="50"
+        RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <RotateTransform Angle="45"/>
+            </Button.RenderTransform>
+        </Button>
     </Grid>
 </Page>

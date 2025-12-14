@@ -26,5 +26,10 @@ namespace App1
         {
             this.InitializeComponent();
         }
+
+        private void Animate_Click(object sender, RoutedEventArgs e)
+        {
+            MyStoryboard.Begin();
+        }
     }
 }

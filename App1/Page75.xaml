@@ -9,6 +9,15 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Border BorderBrush="Blue"
+        BorderThickness="2"
+        CornerRadius="8"
+        Padding="10"
+        Background="LightBlue">
+            <StackPanel Spacing="10">
+                <TextBlock Text="Заголовок" FontSize="20" FontWeight="Bold"/>
+                <TextBlock Text="Содержимое контейнера" TextWrapping="Wrap"/>
+            </StackPanel>
+        </Border>
     </Grid>
 </Page>

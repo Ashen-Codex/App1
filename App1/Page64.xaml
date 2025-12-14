@@ -9,6 +9,13 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <StackPanel Padding="20" Spacing="10" Orientation="Horizontal">
+            <Ellipse Fill="Red" Width="100" Height="100"/>
+            <Rectangle Fill="Blue" Width="100" Height="100"/>
+            <Polygon Points="50,0 100,50 50,100 0,50" 
+             Fill="Green" 
+             Width="100" 
+             Height="100"/>
+        </StackPanel>
     </Grid>
 </Page>
