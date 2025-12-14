@@ -14,7 +14,7 @@ namespace App1
         }
         private void NavigationView_Loaded(object sender, RoutedEventArgs e)
         {
-            ContentFrame.Navigate(typeof(Page1));
+            ContentFrame.Navigate(typeof(HomePage));
         }
         private void NavigationView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
         {
@@ -28,6 +28,9 @@ namespace App1
 
                 switch (item.Tag.ToString())
                 {
+                    case "HomePage":
+                        ContentFrame.Navigate(typeof(HomePage));
+                        break;
                     case "Page1":
                         ContentFrame.Navigate(typeof(Page1));
                         break;

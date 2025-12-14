@@ -26,5 +26,21 @@ namespace App1
         {
             this.InitializeComponent();
         }
+        private async void ShowMessage_Click(object sender, RoutedEventArgs e)
+        {
+            ContentDialog dialog = new ContentDialog
+            {
+                Title = "Уведомление",
+                Content = "Это диалоговое окно",
+                PrimaryButtonText = "ОК",
+                SecondaryButtonText = "Отмена"
+            };
+
+            ContentDialogResult result = await dialog.ShowAsync();
+            if (result == ContentDialogResult.Primary)
+            {
+                // Нажата кнопка ОК
+            }
+        }
     }
 }

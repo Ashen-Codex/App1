@@ -9,11 +9,12 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        
-            <NavigationView x:Name="navView"
-                    Loaded="NavigationView_Loaded"
-                    SelectionChanged="NavigationView_SelectionChanged">
-                <NavigationView.MenuItems>
+
+        <NavigationView x:Name="navView"
+                Loaded="NavigationView_Loaded"
+                SelectionChanged="NavigationView_SelectionChanged">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="Главная" Tag="HomePage" Icon="Home"/>
                 <NavigationViewItem Content="Задание 1" Tag="Page1" />
                 <NavigationViewItem Content="Задание 2" Tag="Page2" />
                 <NavigationViewItem Content="Задание 3" Tag="Page3" />
@@ -114,9 +115,11 @@
                 <NavigationViewItem Content="Задание 98" Tag="Page98" />
                 <NavigationViewItem Content="Задание 99" Tag="Page99" />
                 <NavigationViewItem Content="Задание 100" Tag="Page100" />
+                <NavigationViewItem Content="Параметры" Tag="settings" Icon="Setting"/>
+                <NavigationViewItem Content="О программе" Tag="about" Icon="Help"/>
             </NavigationView.MenuItems>
-                <Frame x:Name="ContentFrame" />
-            </NavigationView>
-        
+            <Frame x:Name="ContentFrame" />
+        </NavigationView>
+
     </Grid>
 </Page>

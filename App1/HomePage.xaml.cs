@@ -20,15 +20,11 @@ namespace App1
     /// <summary>
     /// Пустая страница, которую можно использовать саму по себе или для перехода внутри фрейма.
     /// </summary>
-    public sealed partial class Page27 : Page
+    public sealed partial class HomePage : Page
     {
-        public Page27()
+        public HomePage()
         {
             this.InitializeComponent();
-        }
-        private void Navigate_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationFrame.Navigate(typeof(SecondPage));
         }
     }
 }

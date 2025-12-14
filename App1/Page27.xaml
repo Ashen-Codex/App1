@@ -9,6 +9,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <StackPanel VerticalAlignment="Top" Padding="20" Spacing="10">
+            <Button Content="Перейти на вторую страницу" Click="Navigate_Click"/>
+        </StackPanel>
 
+        <Frame x:Name="NavigationFrame" Margin="0,80,0,0"/>
     </Grid>
 </Page>
