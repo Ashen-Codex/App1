@@ -26,5 +26,34 @@ namespace App1
         {
             this.InitializeComponent();
         }
+
+        private bool ValidateForm()
+        {
+            if (string.IsNullOrEmpty(NameTextBox.Text))
+            {
+                NameErrorTextBlock.Text = "Имя обязательно";
+                return false;
+            }
+
+            if (string.IsNullOrEmpty(EmailTextBox.Text) || !EmailTextBox.Text.Contains("@"))
+            {
+                EmailErrorTextBlock.Text = "Неверный email";
+                return false;
+            }
+
+            return true;
+        }
+
+        private void Submit_Click(object sender, RoutedEventArgs e)
+        {
+            if (ValidateForm())
+            {
+                if (ValidateForm())
+                {
+                    NameErrorTextBlock.Text = "✅ Форма отправлена!";
+                    EmailErrorTextBlock.Text = "";
+                }
+            }
+        }
     }
 }

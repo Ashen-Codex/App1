@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -25,6 +26,34 @@ namespace App1
         public Page55()
         {
             this.InitializeComponent();
+        }
+
+        private async void ProcessData_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var result = await ProcessAsync();
+                StatusTextBlock.Text = "Успешно!";
+            }
+            catch (Exception ex)
+            {
+                ContentDialog errorDialog = new ContentDialog
+                {
+                    Title = "Ошибка",
+                    Content = $"Произошла ошибка: {ex.Message}",
+                    PrimaryButtonText = "ОК"
+                };
+                await errorDialog.ShowAsync();
+            }
+        }
+        private async Task<string> ProcessAsync()
+        {
+            await Task.Delay(1000);
+
+            if (new Random().Next(2) == 0)
+                throw new InvalidOperationException("Случайная ошибка!");
+
+            return "Результат обработки";
         }
     }
 }

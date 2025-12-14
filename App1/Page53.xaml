@@ -9,6 +9,41 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid>
+            <StackPanel 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            Spacing="20"
+            Width="500">
 
+                <TextBlock 
+                Text="Задание 53: Асинхронная загрузка данных"
+                FontSize="20"
+                FontWeight="Bold"/>
+
+                <Button 
+                Content="Загрузить данные" 
+                Click="LoadData_Click"
+                Width="200"/>
+                <ProgressRing 
+                x:Name="LoadingRing" 
+                IsActive="False" 
+                Width="50" 
+                Height="50"/>
+
+                <ListView 
+                x:Name="DataListView"
+                Height="200"
+                Width="350"
+                Margin="0,10,0,0">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Name}" FontSize="16"/>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </StackPanel>
+        </Grid>
     </Grid>
 </Page>

@@ -9,6 +9,42 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid>
+            <StackPanel 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            Spacing="15"
+            Width="300">
 
+                <TextBlock 
+                Text="Задание 54: Валидация формы"
+                FontSize="20"
+                FontWeight="Bold"/>
+
+                <TextBlock Text="Имя:" />
+                <TextBox x:Name="NameTextBox" PlaceholderText="Введите имя" />
+
+                <TextBlock 
+                x:Name="NameErrorTextBlock" 
+                Foreground="Red" 
+                FontSize="12" 
+                TextWrapping="Wrap"/>
+
+                <TextBlock Text="Email:" />
+                <TextBox x:Name="EmailTextBox" PlaceholderText="Введите email" />
+                
+                <TextBlock 
+                x:Name="EmailErrorTextBlock" 
+                Foreground="Red" 
+                FontSize="12" 
+                TextWrapping="Wrap"/>
+
+                <Button 
+                Content="Отправить" 
+                Click="Submit_Click"
+                Width="150"
+                Margin="0,20,0,0"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Page>

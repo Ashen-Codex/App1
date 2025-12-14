@@ -9,6 +9,26 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <StackPanel 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            Spacing="20">
 
+            <TextBlock 
+                Text="Задание 55: Обработка исключений"
+                FontSize="20"
+                FontWeight="Bold"/>
+
+            <Button 
+                Content="Обработать данные" 
+                Click="ProcessData_Click"
+                Width="200"/>
+
+            <TextBlock 
+                x:Name="StatusTextBlock"
+                Text="Готов к работе..."
+                FontSize="16"
+                Foreground="DarkBlue"/>
+        </StackPanel>
     </Grid>
 </Page>
