@@ -23,5 +23,14 @@ namespace App1
         {
             this.InitializeComponent();
         }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+            if (button != null)
+            {
+                string content = button.Content?.ToString() ?? "Без текста";
+                ResultText.Text = $"Нажата: {content}";
+            }
+        }
     }
 }

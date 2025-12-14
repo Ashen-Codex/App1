@@ -26,7 +26,14 @@ namespace App1
         public Page34()
         {
             this.InitializeComponent();
-        }
         
+       
+
+                // Вручную задаём значение
+                string name = "Привет из кода!";
+                MyTextBlock.Text = name;
+            
+        }
     }
 }
+

@@ -9,6 +9,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <StackPanel Spacing="10" Padding="20">
+            <Button Content="Кнопка 1" Click="Button_Click"/>
+            <Button Content="Кнопка 2" Click="Button_Click"/>
+            <TextBlock x:Name="ResultText" FontSize="16"/>
+        </StackPanel>
     </Grid>
 </Page>
