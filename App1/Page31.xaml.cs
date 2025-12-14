@@ -1,30 +1,41 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
+﻿using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
+using Windows.UI.Xaml.Controls.Maps;
 using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
-
-// Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace App1
 {
-    /// <summary>
-    /// Пустая страница, которую можно использовать саму по себе или для перехода внутри фрейма.
-    /// </summary>
     public sealed partial class Page31 : Page
     {
         public Page31()
         {
-            this.InitializeComponent();
+            InitializeComponent();
+
+            // Список имён
+            string[] names = { "Элемент 1", "Элемент 2", "Элемент 3" };
+
+            foreach (string name in names)
+            {
+                // Создаём TextBlock
+                var textBlock = new TextBlock
+                {
+                    Text = name,
+                    FontSize = 16,
+                    Margin = new Thickness(5)
+                };
+
+                // Оборачиваем в Border
+                var border = new Border
+                {
+                    BorderBrush = new SolidColorBrush(Windows.UI.Colors.Blue),
+                    BorderThickness = new Thickness(1),
+                    Padding = new Thickness(10),
+                    Child = textBlock
+                };
+
+                // Добавляем в ItemsControl
+                MyItemsControl.Items.Add(border);
+            }
         }
     }
 }

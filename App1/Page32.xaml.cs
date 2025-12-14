@@ -1,30 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
-
-// Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=234238
+﻿
+using Microsoft.UI.Xaml.Controls;
 
 namespace App1
 {
-    /// <summary>
-    /// Пустая страница, которую можно использовать саму по себе или для перехода внутри фрейма.
-    /// </summary>
-    public sealed partial class Page32 : Page
+    public sealed partial class Page32 : Windows.UI.Xaml.Controls.Page
     {
         public Page32()
         {
-            this.InitializeComponent();
+            InitializeComponent();
+            InitializeTreeView();
+        }
+
+        private void InitializeTreeView()
+        {
+            // Корневые узлы
+            var category1 = new TreeViewNode { Content = "Категория 1", IsExpanded = true };
+            var category2 = new TreeViewNode { Content = "Категория 2" };
+
+            // Дочерние узлы
+            category1.Children.Add(new TreeViewNode { Content = "Подкатегория 1.1" });
+            category1.Children.Add(new TreeViewNode { Content = "Подкатегория 1.2" });
+            category2.Children.Add(new TreeViewNode { Content = "Подкатегория 2.1" });
+
+            // Добавляем в TreeView
+            MyTreeView.RootNodes.Add(category1);
+            MyTreeView.RootNodes.Add(category2);
         }
     }
 }

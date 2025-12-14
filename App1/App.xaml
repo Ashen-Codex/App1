@@ -10,7 +10,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <!-- Сначала подключаем WinUI -->
                 <winui:XamlControlsResources />
-                <!-- Затем ваши стили -->
+                <!-- Затем ваши собственные стили -->
                 <ResourceDictionary Source="Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
