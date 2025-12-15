@@ -19,10 +19,10 @@ namespace App1
         {
             allNews = new List<NewsItem>
             {
-                new NewsItem { Title = "Новость 1", Content = "Содержимое первой новости.", Category = "Политика", ImageSource = "ms-appx:///Assets/StoreLogo.png" },
-                new NewsItem { Title = "Новость 2", Content = "Содержимое второй новости.", Category = "Экономика", ImageSource = "ms-appx:///Assets/SplashScreen.scale-200.png" },
-                new NewsItem { Title = "Новость 3", Content = "Содержимое третьей новости.", Category = "Технологии", ImageSource = "ms-appx:///Assets/icon228.png" },
-                new NewsItem { Title = "Новость 4", Content = "Содержимое четвёртой новости.", Category = "Политика", ImageSource = "ms-appx:///Assets/icon322.png" }
+                new NewsItem { Title = "Новость 1", Content = "Президент Замбии крутой?!", Category = "Политика", ImageSource = "ms-appx:///Assets/smile1.jpg" },
+                new NewsItem { Title = "Новость 2", Content = "Получить 32 копейки.", Category = "Экономика", ImageSource = "ms-appx:///Assets/smile2.jpg" },
+                new NewsItem { Title = "Новость 3", Content = "Технология `открывавшки бутылок` вышла на новый уровень!", Category = "Технологии", ImageSource = "ms-appx:///Assets/smile3.jpg" },
+                new NewsItem { Title = "Новость 4", Content = "Древние Русы против Ящеров", Category = "Политика", ImageSource = "ms-appx:///Assets/smile4.jpg" }
             };
 
             filteredNews = allNews;
