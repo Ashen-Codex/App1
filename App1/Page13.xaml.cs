@@ -17,14 +17,30 @@ using Windows.UI.Xaml.Navigation;
 
 namespace App1
 {
-    /// <summary>
-    /// Пустая страница, которую можно использовать саму по себе или для перехода внутри фрейма.
-    /// </summary>
-    public sealed partial class Page13 : Page
-    {
-        public Page13()
+        /// <summary>
+        /// Пустая страница, которую можно использовать саму по себе или для перехода внутри фрейма.
+        /// </summary>
+        public sealed partial class Page13 : Page
         {
-            this.InitializeComponent();
+            public Page13()
+            {
+                this.InitializeComponent();
+            }
+
+            private void Birthdate_Changed(object sender, DatePickerValueChangedEventArgs e)
+            {
+                // Используем e.NewDate вместо обращения к sender
+                if (e.NewDate != null)
+                {
+                    DateTime date = e.NewDate.DateTime;
+                    SelectedDateTextBlock.Text = $"Выбрана дата: {date:dd.MM.yyyy}";
+                }
+                else
+                {
+                    SelectedDateTextBlock.Text = "Дата не выбрана";
+                }
+            }
         }
-    }
 }
+
+

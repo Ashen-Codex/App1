@@ -28,8 +28,7 @@ namespace App1
         }
         private void GoBack_Click(object sender, RoutedEventArgs e)
         {
-            if (Frame.CanGoBack)
-                Frame.GoBack();
+            NaviFrame.Navigate(typeof(Page27));
         }
     }
 }

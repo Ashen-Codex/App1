@@ -1,30 +1,57 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
-
-// Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace App1
 {
-    /// <summary>
-    /// Пустая страница, которую можно использовать саму по себе или для перехода внутри фрейма.
-    /// </summary>
     public sealed partial class Page36 : Page
     {
+        // 1. Исходные данные — просто массив строк
+        private string[] allFruits = {
+            "Яблоко", "Банан", "Апельсин", "Груша", "Киви",
+            "Манго", "Ананас", "Вишня", "Слива", "Персик",
+            "Арбуз", "Дыня", "Лимон", "Грейпфрут", "Мандарин"
+        };
+
         public Page36()
         {
-            this.InitializeComponent();
+            InitializeComponent();
+            // 2. При запуске — показываем всё
+            ShowItems(allFruits);
+        }
+
+        private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string query = SearchBox.Text?.ToLower() ?? "";
+
+            if (string.IsNullOrWhiteSpace(query))
+            {
+                // Если поле пустое — показываем всё
+                ShowItems(allFruits);
+            }
+            else
+            {
+                // 3. Вручную фильтруем
+                var filtered = new System.Collections.Generic.List<string>();
+                foreach (string fruit in allFruits)
+                {
+                    if (fruit.ToLower().Contains(query))
+                    {
+                        filtered.Add(fruit);
+                    }
+                }
+                ShowItems(filtered.ToArray());
+            }
+        }
+
+        // 4. Вручную обновляем содержимое ListView
+        private void ShowItems(string[] items)
+        {
+            ResultsList.Items.Clear(); // Очищаем
+            foreach (string item in items)
+            {
+                ResultsList.Items.Add(item); // Добавляем по одному
+            }
         }
     }
 }

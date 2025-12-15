@@ -17,6 +17,7 @@
                        Margin="0,0,0,30"/>
                 <Button Content="Назад" Click="GoBack_Click"/>
             </StackPanel>
+            <Frame x:Name="NaviFrame" Margin="0,80,0,0"/>
         </Grid>
     </Grid>
 </Page>
