@@ -8,7 +8,38 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
 
+        <Page.Resources>
+            <Style x:Key="CustomButtonStyle" TargetType="Button">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border 
+                            Background="{TemplateBinding Background}"
+                            CornerRadius="10"
+                            Padding="10">
+                                <ContentPresenter 
+                                Content="{TemplateBinding Content}"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </Page.Resources>
+
+    <Grid>
+        <StackPanel 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            Spacing="15">
+
+            <Button 
+                Content="Нажми меня"
+                Style="{StaticResource CustomButtonStyle}"
+                Background="LightBlue"/>
+
+        </StackPanel>
     </Grid>
 </Page>

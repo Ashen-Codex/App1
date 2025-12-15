@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace App1
 {
-    public class ImageItem
+    public class MyTextItem
     {
-        public string ImageSource { get; set; }
+        public string Text { get; set; }
     }
-}   
+}

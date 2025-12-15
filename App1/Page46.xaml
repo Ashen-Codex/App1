@@ -9,6 +9,15 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Button Content="Меню">
+            <Button.Flyout>
+                <MenuFlyout>
+                    <MenuFlyoutItem Text="Пункт 1" Click="MenuItem1_Click"/>
+                    <MenuFlyoutItem Text="Пункт 2" Click="MenuItem2_Click"/>
+                    <MenuFlyoutSeparator/>
+                    <MenuFlyoutItem Text="Выход" Click="Exit_Click"/>
+                </MenuFlyout>
+            </Button.Flyout>
+        </Button>
     </Grid>
 </Page>

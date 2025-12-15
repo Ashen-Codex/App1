@@ -9,6 +9,20 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid>
+            <StackPanel 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            Spacing="15">
 
+                <Button 
+                x:Name="MyButton"
+                Content="Анимировать"
+                Click="AnimateButton_Click"
+                Width="150"
+                Height="50"/>
+
+            </StackPanel>
+        </Grid>
     </Grid>
 </Page>

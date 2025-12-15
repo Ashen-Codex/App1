@@ -26,5 +26,29 @@ namespace App1
         {
             this.InitializeComponent();
         }
+
+        private void Element_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            StatusTextBlock.Text = "Мышь вошла в область элемента";
+            TargetElement.Fill = new Windows.UI.Xaml.Media.SolidColorBrush(Windows.UI.Colors.Blue);
+        }
+
+        private void Element_PointerExited(object sender, PointerRoutedEventArgs e)
+        {
+            StatusTextBlock.Text = "Мышь вышла из области элемента";
+            TargetElement.Fill = new Windows.UI.Xaml.Media.SolidColorBrush(Windows.UI.Colors.LightBlue);
+        }
+
+        private void Element_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            StatusTextBlock.Text = "Кнопка мыши или палец нажаты";
+            TargetElement.Fill = new Windows.UI.Xaml.Media.SolidColorBrush(Windows.UI.Colors.Red);
+        }
+
+        private void Element_PointerReleased(object sender, PointerRoutedEventArgs e)
+        {
+            StatusTextBlock.Text = "Кнопка мыши или палец отпущены";
+            TargetElement.Fill = new Windows.UI.Xaml.Media.SolidColorBrush(Windows.UI.Colors.LightBlue);
+        }
     }
 }

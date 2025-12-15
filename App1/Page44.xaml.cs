@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +26,15 @@ namespace App1
         public Page44()
         {
             this.InitializeComponent();
+        }
+
+        private async void TextBlock_RightTapped(object sender, RightTappedRoutedEventArgs e)
+        {
+            PopupMenu menu = new PopupMenu();
+            menu.Commands.Add(new UICommand("Копировать"));
+            menu.Commands.Add(new UICommand("Вставить"));
+
+            await menu.ShowAsync(e.GetPosition(sender as UIElement));
         }
     }
 }

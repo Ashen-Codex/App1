@@ -9,6 +9,29 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid>
+            <StackPanel 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            Spacing="15">
 
+                <Rectangle 
+                x:Name="TargetElement"
+                Width="200"
+                Height="100"
+                Fill="LightBlue"
+                PointerEntered="Element_PointerEntered"
+                PointerExited="Element_PointerExited"
+                PointerPressed="Element_PointerPressed"
+                PointerReleased="Element_PointerReleased"/>
+
+                <TextBlock 
+                x:Name="StatusTextBlock"
+                Text="Наведите мышь на элемент"
+                FontSize="16"
+                Foreground="DarkBlue"/>
+
+            </StackPanel>
+        </Grid>
     </Grid>
 </Page>

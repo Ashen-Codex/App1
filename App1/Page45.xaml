@@ -9,6 +9,16 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <Button Content="Нажми меня">
+            <Button.Flyout>
+                <Flyout>
+                    <StackPanel Spacing="10">
+                        <TextBlock Text="Это всплывающее меню"/>
+                        <Button Content="Опция 1"/>
+                        <Button Content="Опция 2"/>
+                    </StackPanel>
+                </Flyout>
+            </Button.Flyout>
+        </Button>
     </Grid>
 </Page>

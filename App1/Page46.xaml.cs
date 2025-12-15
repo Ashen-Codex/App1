@@ -26,5 +26,19 @@ namespace App1
         {
             this.InitializeComponent();
         }
+        private void MenuItem1_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("Пункт 1");
+        }
+
+        private void MenuItem2_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("Пункт 2");
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("Выход");
+        }
     }
 }

@@ -26,5 +26,24 @@ namespace App1
         {
             this.InitializeComponent();
         }
+
+        private void ShowFlyout_Click(object sender, RoutedEventArgs e)
+        {
+            var flyout = new Flyout();
+
+            var stackPanel = new StackPanel { Spacing = 10 };
+
+            var textBlock = new TextBlock { Text = "Это всплывающее меню" };
+            var button1 = new Button { Content = "Опция 1" };
+            var button2 = new Button { Content = "Опция 2" };
+
+            stackPanel.Children.Add(textBlock);
+            stackPanel.Children.Add(button1);
+            stackPanel.Children.Add(button2);
+
+            flyout.Content = stackPanel;
+
+            flyout.ShowAt(sender as FrameworkElement);
+        }
     }
 }

@@ -9,6 +9,33 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <StackPanel 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" 
+            Spacing="15">
 
+            <TextBlock 
+                Text="Это текстовый элемент" 
+                FontSize="16" 
+                Foreground="DarkBlue"/>
+
+            <Image 
+                Source="ms-appx:///Assets/icon228.png" 
+                Width="100" 
+                Height="100"
+                Stretch="UniformToFill"/>
+
+            <TextBlock 
+                Text="Ещё один текст" 
+                FontSize="16" 
+                Foreground="DarkBlue"/>
+
+            <Image 
+                Source="ms-appx:///Assets/icon322.png" 
+                Width="100" 
+                Height="100"
+                Stretch="UniformToFill"/>
+
+        </StackPanel>
     </Grid>
 </Page>
