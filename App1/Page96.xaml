@@ -9,6 +9,60 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <StackPanel 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Top" 
+            Spacing="15"
+            Width="400">
 
+            <TextBlock 
+                Text="Сумма кредита (руб.):"
+                FontSize="16"/>
+            <TextBox 
+                x:Name="LoanAmountTextBox" 
+                PlaceholderText="Введите сумму"
+                Height="40"
+                Width="350"/>
+
+            <TextBlock 
+                Text="Процентная ставка (%):"
+                FontSize="16"/>
+            <Slider 
+                x:Name="InterestRateSlider"
+                Minimum="0.1"
+                Maximum="20.0"
+                Value="10.0"
+                Width="350"/>
+            <TextBlock 
+                x:Name="InterestRateTextBlock"
+                Text="10.0%"
+                FontSize="16"
+                Foreground="DarkBlue"/>
+
+            <TextBlock 
+                Text="Срок кредита (лет):"
+                FontSize="16"/>
+            <TextBox 
+                x:Name="LoanTermTextBox" 
+                PlaceholderText="Введите срок"
+                Height="40"
+                Width="350"/>
+
+            <Button
+                Content="Рассчитать"
+                Click="Calculate_Click"
+                Width="150"/>
+
+            <TextBlock 
+                Text="Ежемесячный платёж:"
+                FontSize="16"
+                FontWeight="Bold"/>
+            <TextBlock 
+                x:Name="ResultTextBlock"
+                Text=""
+                FontSize="18"
+                Foreground="DarkBlue"/>
+
+        </StackPanel>
     </Grid>
 </Page>

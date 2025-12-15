@@ -9,6 +9,63 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <StackPanel 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Top" 
+            Spacing="15"
+            Width="400">
 
+            <TextBlock 
+                x:Name="TimeTextBlock"
+                Text="00:00:00"
+                FontSize="36"
+                FontWeight="Bold"/>
+
+            <TextBlock 
+                Text="Установите время (секунды):"
+                FontSize="16"/>
+            <TextBox 
+                x:Name="TimeNumberBox"
+                Text="10"
+                Width="100"
+                InputScope="Number"/>
+
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <Button 
+                    Content="Start"
+                    Click="Start_Click"
+                    Width="100"/>
+                <Button 
+                    Content="Pause"
+                    Click="Pause_Click"
+                    Width="100"/>
+                <Button 
+                    Content="Stop"
+                    Click="Stop_Click"
+                    Width="100"/>
+            </StackPanel>
+
+            <TextBlock 
+                Text="Визуализация:"
+                FontSize="16"
+                FontWeight="Bold"/>
+            <ProgressRing 
+                x:Name="ProgressRing"
+                IsActive="False"
+                Width="50"
+                Height="50"/>
+
+            <TextBlock 
+                Text="Скорость:"
+                FontSize="16"
+                FontWeight="Bold"/>
+            <Slider 
+                x:Name="SpeedSlider"
+                Minimum="0.5"
+                Maximum="10.0"
+                Value="1.0"
+                Width="350"/>
+
+        </StackPanel>
     </Grid>
 </Page>

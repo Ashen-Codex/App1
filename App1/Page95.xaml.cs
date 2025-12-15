@@ -1,30 +1,103 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
+﻿using System.Collections.Generic;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
-
-// Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace App1
 {
-    /// <summary>
-    /// Пустая страница, которую можно использовать саму по себе или для перехода внутри фрейма.
-    /// </summary>
     public sealed partial class Page95 : Page
     {
+        private List<NewsItem> allNews;
+        private List<NewsItem> filteredNews;
+
         public Page95()
         {
             this.InitializeComponent();
+            LoadData();
+        }
+
+        private void LoadData()
+        {
+            allNews = new List<NewsItem>
+            {
+                new NewsItem { Title = "Новость 1", Content = "Содержимое первой новости.", Category = "Политика", ImageSource = "ms-appx:///Assets/StoreLogo.png" },
+                new NewsItem { Title = "Новость 2", Content = "Содержимое второй новости.", Category = "Экономика", ImageSource = "ms-appx:///Assets/SplashScreen.scale-200.png" },
+                new NewsItem { Title = "Новость 3", Content = "Содержимое третьей новости.", Category = "Технологии", ImageSource = "ms-appx:///Assets/icon228.png" },
+                new NewsItem { Title = "Новость 4", Content = "Содержимое четвёртой новости.", Category = "Политика", ImageSource = "ms-appx:///Assets/icon322.png" }
+            };
+
+            filteredNews = allNews;
+            DisplayNews();
+        }
+
+        private void Category_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            string selectedCategory = CategoryComboBox.SelectedItem as string;
+
+            if (string.IsNullOrEmpty(selectedCategory) || selectedCategory == "Все")
+            {
+                filteredNews = allNews;
+            }
+            else
+            {
+                filteredNews = allNews.FindAll(item => item.Category == selectedCategory);
+            }
+
+            DisplayNews();
+        }
+
+        private void DisplayNews()
+        {
+            NewsPanel.Children.Clear();
+
+            foreach (var news in filteredNews)
+            {
+                var newsCard = new Border
+                {
+                    Background = new Windows.UI.Xaml.Media.SolidColorBrush(Windows.UI.Colors.LightGray),
+                    CornerRadius = new Windows.UI.Xaml.CornerRadius(8),
+                    Padding = new Windows.UI.Xaml.Thickness(10),
+                    Margin = new Windows.UI.Xaml.Thickness(0, 0, 0, 10)
+                };
+
+                var newsContent = new StackPanel { Spacing = 5 };
+
+                var image = new Image
+                {
+                    Source = new Windows.UI.Xaml.Media.Imaging.BitmapImage(new System.Uri(news.ImageSource)),
+                    Width = 50,
+                    Height = 50,
+                    Stretch = Windows.UI.Xaml.Media.Stretch.UniformToFill
+                };
+                newsContent.Children.Add(image);
+
+                var title = new TextBlock
+                {
+                    Text = news.Title,
+                    FontSize = 16,
+                    FontWeight = Windows.UI.Text.FontWeights.Bold,
+                    Foreground = new Windows.UI.Xaml.Media.SolidColorBrush(Windows.UI.Colors.Black)
+                };
+                newsContent.Children.Add(title);
+
+                var content = new TextBlock
+                {
+                    Text = news.Content,
+                    FontSize = 14,
+                    Foreground = new SolidColorBrush(Windows.UI.Colors.DarkBlue)
+                };
+                newsContent.Children.Add(content);
+
+                newsCard.Child = newsContent;
+                NewsPanel.Children.Add(newsCard);
+            }
         }
     }
-}
+
+    public class NewsItem
+    {
+        public string Title { get; set; }
+        public string Content { get; set; }
+        public string Category { get; set; }
+        public string ImageSource { get; set; }
+    }
+} 
