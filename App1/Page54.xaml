@@ -16,11 +16,6 @@
             Spacing="15"
             Width="300">
 
-                <TextBlock 
-                Text="Задание 54: Валидация формы"
-                FontSize="20"
-                FontWeight="Bold"/>
-
                 <TextBlock Text="Имя:" />
                 <TextBox x:Name="NameTextBox" PlaceholderText="Введите имя" />
 

@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
@@ -6,8 +6,8 @@ namespace App1
 {
     public class MainViewModel : INotifyPropertyChanged
     {
-        private string _title = "Изначальный заголовок";
-        private List<object> _items;
+        private string _title;
+        private ObservableCollection<Item> _items;
 
         public string Title
         {
@@ -15,7 +15,10 @@ namespace App1
             set => SetProperty(ref _title, value);
         }
 
-        public List<object> Items
+        /// <summary>
+        /// Список элементов, отображаемых в ListView
+        /// </summary>
+        public ObservableCollection<Item> Items
         {
             get => _items;
             set => SetProperty(ref _items, value);
@@ -23,32 +26,30 @@ namespace App1
 
         public MainViewModel()
         {
-            LoadData();
+            Title = "Список задач";
+            Items = new ObservableCollection<Item>
+            {
+                new Item { Name = "Купить молоко" },
+                new Item { Name = "Сделать задание по UWP" },
+                new Item { Name = "Погулять с собакой" }
+            };
         }
 
-        private void LoadData()
+        // Вспомогательный метод для безопасного вызова INotifyPropertyChanged
+        private void SetProperty<T>(ref T field, T value, [CallerMemberName] string propertyName = null)
         {
-            Items = new List<object>
+            if (!Equals(field, value))
             {
-                "Элемент A",
-                "Элемент B",
-                "Элемент C"
-            };
+                field = value;
+                OnPropertyChanged(propertyName);
+            }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        private void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        protected bool SetProperty<T>(ref T field, T value, [CallerMemberName] string propertyName = null)
-        {
-            if (Equals(field, value)) return false;
-            field = value;
-            OnPropertyChanged(propertyName);
-            return true;
         }
     }
 }

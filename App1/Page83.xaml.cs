@@ -13,16 +13,10 @@ namespace App1
         {
             this.InitializeComponent();
             scrollViewer = NotesPanel.Parent as ScrollViewer;
-            LoadNotes();
+            
         }
 
-        private void LoadNotes()
-        {
-            // Добавляем тестовые заметки
-            AddNote("Первая заметка");
-            AddNote("Вторая заметка");
-            AddNote("Третья заметка");
-        }
+        
 
         private void SaveNote_Click(object sender, RoutedEventArgs e)
         {

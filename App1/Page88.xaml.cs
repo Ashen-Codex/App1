@@ -22,8 +22,7 @@ namespace App1
             events = new List<Event>
             {
                 new Event { Date = "15.12.2025", Time = "10:00", Description = "Встреча с клиентом" },
-                new Event { Date = "16.12.2025", Time = "14:30", Description = "Обед" },
-                new Event { Date = "17.12.2025", Time = "09:00", Description = "Совещание" }
+                new Event { Date = "16.12.2025", Time = "14:30", Description = "Обед" }
             };
 
             DisplayEvents();

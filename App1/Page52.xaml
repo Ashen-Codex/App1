@@ -15,11 +15,6 @@
             Spacing="15"
             Width="400">
 
-            <TextBlock 
-                Text="Задание 52: Взаимодействие между элементами"
-                FontSize="20"
-                FontWeight="Bold"/>
-
             <TextBlock Text="Выберите категорию:" />
             <ComboBox 
                 x:Name="CategoryComboBox"
