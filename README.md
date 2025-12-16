@@ -365,41 +365,49 @@
 ---
 
 ### Задание 44: Контекстное меню (RightTap)
+<img width="229" height="101" alt="image" src="https://github.com/user-attachments/assets/c3c87b37-bd55-463d-a61a-4091e81406ce" />
+<img width="527" height="98" alt="image" src="https://github.com/user-attachments/assets/9ab21d26-ea43-42e2-9500-d666fc061e32" />
 
 
 
 ---
 
 ### Задание 45: Flyout для всплывающих меню
+<img width="219" height="190" alt="image" src="https://github.com/user-attachments/assets/b313d692-35d9-4b1a-802f-11887937dee2" />
 
 
 ---
 
 ### Задание 46: MenuFlyout для контекстного меню
 
+<img width="121" height="155" alt="image" src="https://github.com/user-attachments/assets/9ba61d8f-b549-4649-a339-67b5264076b1" />
 
 
 ---
 
 ### Задание 47: AppBarButton в CommandBar
 
+<img width="491" height="78" alt="image" src="https://github.com/user-attachments/assets/c4119361-1db6-4b08-bbe1-3f6914b20137" />
 
 
 ---
 
 ### Задание 48: SplitButton для разделенной кнопки
+<img width="148" height="119" alt="image" src="https://github.com/user-attachments/assets/20fd06a6-cc46-48f2-b05e-a0630ef62e8e" />
 
 
 
 ---
 
 ### Задание 49: DropDownButton для кнопки с меню
+<img width="131" height="177" alt="image" src="https://github.com/user-attachments/assets/4facb485-0a24-4e95-9c0b-99e06460466e" />
 
 
 
 ---
 
 ### Задание 50: TeachingTip для подсказок
+<img width="504" height="157" alt="image" src="https://github.com/user-attachments/assets/6aa1146e-0c4a-4cef-bdc9-8bd25dc4695a" />
 
 
 
@@ -407,51 +415,63 @@
 
 ### Задание 51: Инкапсуляция логики в ViewModel
 
+<img width="288" height="171" alt="image" src="https://github.com/user-attachments/assets/e67464b2-864b-4d6c-bcd2-ef941789babb" />
 
 
 ---
 
 ### Задание 52: Взаимодействие между элементами управления
 
+<img width="329" height="361" alt="image" src="https://github.com/user-attachments/assets/019df878-6878-492a-8373-6444232de700" />
+<img width="323" height="244" alt="image" src="https://github.com/user-attachments/assets/67abe61b-c3af-4f5f-abf0-ca3d535ce122" />
 
 
 ---
 
 ### Задание 53: Асинхронная загрузка данных
 
+<img width="460" height="179" alt="image" src="https://github.com/user-attachments/assets/5ad4db01-2520-41b8-b699-baf7e6d3338d" />
+<img width="424" height="260" alt="image" src="https://github.com/user-attachments/assets/76174106-fcc8-4ccc-a6ec-281369a610c8" />
 
 ---
 
 ### Задание 54: Валидация данных в форме
 
+<img width="328" height="300" alt="image" src="https://github.com/user-attachments/assets/240e6b09-fbdc-434a-bf74-69bd7aa38248" />
 
 ---
 
 ### Задание 55: Обработка исключений и отображение ошибок
+<img width="363" height="309" alt="image" src="https://github.com/user-attachments/assets/3d4c528e-aef0-4edc-9b33-b384b408505e" />
 
 
 
 ---
 
 ### Задание 56: Использование ResourceDictionary
-
+<img width="245" height="97" alt="image" src="https://github.com/user-attachments/assets/6d6f4623-f046-4b30-ab64-ee26466369b0" />
+<img width="335" height="205" alt="image" src="https://github.com/user-attachments/assets/eaf9d4a6-c0ef-47e2-a6c6-539e1b320d4d" />
 
 
 ---
 
 ### Задание 57: Адаптивный дизайн (Adaptive Layout)
 
+<img width="823" height="663" alt="image" src="https://github.com/user-attachments/assets/a7217c33-cc20-4646-bc12-20e683fb6e22" />
 
 
 ---
 
 ### Задание 58: Использование Behaviors для повторного использования логики
 
+<img width="303" height="114" alt="image" src="https://github.com/user-attachments/assets/74ad618f-f2dc-4fa6-9cc8-8696c02f3e57" />
+<img width="289" height="110" alt="image" src="https://github.com/user-attachments/assets/4a4c15da-c3cf-40b4-8b2b-819e58eb27fb" />
 
 
 ---
 
 ### Задание 59: Использование Converters для преобразования данных
+<img width="274" height="51" alt="image" src="https://github.com/user-attachments/assets/a26e0161-2fff-4348-80e0-837e10ca7b8d" />
 
 
 
@@ -461,27 +481,35 @@
 
 ### Задание 60: Освоение Pivot для мобильного приложения
 
+<img width="446" height="100" alt="image" src="https://github.com/user-attachments/assets/f5c7d753-9721-46bd-8a9e-cac135ef6825" />
+<img width="374" height="111" alt="image" src="https://github.com/user-attachments/assets/75410063-0777-4ccd-a2d9-c2d8f4153c1d" />
+<img width="413" height="102" alt="image" src="https://github.com/user-attachments/assets/484c0431-1235-4496-b8d8-4c512a402b7f" />
 
 
 ---
 
 ### Задание 61: Canvas для рисования и позиционирования
 
+<img width="554" height="356" alt="image" src="https://github.com/user-attachments/assets/7e7bb644-6199-4eff-a75f-f8631764a97b" />
 
 ---
 
 ### Задание 62: Media элементы (Audio/Video)
+<img width="756" height="612" alt="image" src="https://github.com/user-attachments/assets/96b8e87e-f47c-430b-9d3b-f7130f5b98da" />
+<img width="799" height="614" alt="image" src="https://github.com/user-attachments/assets/8ea5b9ae-9cf0-49e2-bd2c-9098708eced2" />
 
 
 ---
 
 ### Задание 63: Image и ImageBrush
+<img width="527" height="323" alt="image" src="https://github.com/user-attachments/assets/3c5f09a9-1fe3-4744-8a73-264b40c5af3d" />
 
 
 
 ---
 
 ### Задание 64: Shape элементы (Ellipse, Rectangle, Polygon)
+<img width="372" height="166" alt="image" src="https://github.com/user-attachments/assets/848a85d3-62c6-488f-b09b-4017ea64beb9" />
 
 
 
@@ -489,33 +517,42 @@
 
 ### Задание 65: Gradient и Effects
 
+<img width="480" height="242" alt="image" src="https://github.com/user-attachments/assets/db999787-92da-42e0-ac3b-3c837b7627f9" />
 
 
 ---
 
 ### Задание 66: Transform для трансформации элементов
 
+<img width="432" height="118" alt="image" src="https://github.com/user-attachments/assets/4d6ad2cc-d99a-47ad-81af-54b6ea9d20c8" />
 
 
 ---
 
 ### Задание 67: Диспетчеризация асинхронного кода
+<img width="432" height="105" alt="image" src="https://github.com/user-attachments/assets/1ac64f14-27ae-4977-bca2-56478db1e82e" />
+<img width="490" height="82" alt="image" src="https://github.com/user-attachments/assets/7221a3f6-2937-4ef0-8b0f-371cbe670656" />
 
 
 
 ---
 
 ### Задание 68: Свойства XAML Attached Properties
+<img width="333" height="81" alt="image" src="https://github.com/user-attachments/assets/4701e606-7a14-41e5-aa37-ef724d55f2f1" />
 
 
 ---
 
 ### Задание 69: Использование Storyboard для сложных анимаций
+<img width="355" height="386" alt="image" src="https://github.com/user-attachments/assets/a63b0e21-3458-4f17-bcfa-389cf49ab1f6" />
+<img width="485" height="298" alt="image" src="https://github.com/user-attachments/assets/872fa4e3-8b11-4559-aa2f-3123dd6d398a" />
+
 
 
 ---
 
 ### Задание 70: Использование VisualStates для управления состояниями
+<img width="823" height="763" alt="image" src="https://github.com/user-attachments/assets/c544492a-b6f3-42c7-a445-0a4270c26212" />
 
 
 
@@ -523,11 +560,14 @@
 
 ### Задание 71: Использование ThemeResources
 
+<img width="805" height="610" alt="image" src="https://github.com/user-attachments/assets/2f289b16-d277-4f7a-ac83-d5c70cf7c034" />
 
 
 ---
 
 ### Задание 72: Создание пользовательской ControlTemplate
+<img width="409" height="159" alt="image" src="https://github.com/user-attachments/assets/be2a8668-46ef-463f-bf76-ca4d1780be8b" />
+<img width="304" height="122" alt="image" src="https://github.com/user-attachments/assets/e6799ed6-0de1-4384-b74b-2f6024993a5d" />
 
 
 
@@ -535,15 +575,20 @@
 
 ### Задание 73: Использование RelativePanel для сложного макета
 
+<img width="446" height="210" alt="image" src="https://github.com/user-attachments/assets/e5071805-ad1a-4dcf-ae05-454741690bd8" />
 
 ---
 
 ### Задание 74: Использование AppBarToggleButton
 
+<img width="605" height="62" alt="image" src="https://github.com/user-attachments/assets/56304265-c61f-4acc-ad55-4b2871bb8712" />
+<img width="517" height="47" alt="image" src="https://github.com/user-attachments/assets/b3aa82d2-bc57-412b-a17b-6556c654a341" />
+<img width="581" height="46" alt="image" src="https://github.com/user-attachments/assets/6f88664c-bb4e-4e8f-87b5-f005edb47ac1" />
 
 ---
 
 ### Задание 75: Использование Border для стилизации
+<img width="860" height="775" alt="image" src="https://github.com/user-attachments/assets/058139ac-e188-49f6-b0c1-e2564258e97c" />
 
 
 
@@ -554,111 +599,179 @@
 ---
 
 ### Задание 76: Приложение "Список дел"
+<img width="529" height="531" alt="image" src="https://github.com/user-attachments/assets/4e0768db-de53-4f18-a4e8-68a98f9ebadd" />
+
 ---
 
 ### Задание 77: Приложение "Калькулятор"
+<img width="837" height="293" alt="image" src="https://github.com/user-attachments/assets/bd66ba68-0ec7-4071-8646-edf2a2a6d164" />
+<img width="828" height="346" alt="image" src="https://github.com/user-attachments/assets/2fa33bec-4804-4cd3-87b8-d0b71ad8075e" />
+<img width="449" height="505" alt="image" src="https://github.com/user-attachments/assets/773b155d-bf3d-4a5c-8965-8fbb011c0c59" />
+<img width="450" height="566" alt="image" src="https://github.com/user-attachments/assets/b20f1b8a-0e29-4453-a1c3-335047d13e9a" />
+
 ---
 
 ### Задание 78: Форма регистрации
+<img width="523" height="416" alt="image" src="https://github.com/user-attachments/assets/6fde570f-1531-4d4b-98d4-020b39a079b6" />
+<img width="480" height="403" alt="image" src="https://github.com/user-attachments/assets/9728abac-eff2-410d-bb02-6fd011f6bd10" />
+<img width="466" height="466" alt="image" src="https://github.com/user-attachments/assets/af563906-835d-4d39-98e3-5dd3b51729e7" />
+
 ---
 
 ### Задание 79: Приложение "Погода"
+<img width="479" height="725" alt="image" src="https://github.com/user-attachments/assets/ec81fd22-615b-416e-bec1-f9ed1f470d27" />
+<img width="489" height="738" alt="image" src="https://github.com/user-attachments/assets/f4f968dc-1360-4340-9692-67b490632868" />
 
 ---
 ### Задание 80: Медиаплеер
+<img width="496" height="452" alt="image" src="https://github.com/user-attachments/assets/e26d5f3b-4ea5-46d6-ab30-fa66b4a8af00" />
 
 ---
 
 
 ### Задание 81: Приложение "Галерея фотографий"
+<img width="500" height="646" alt="image" src="https://github.com/user-attachments/assets/c4f3908c-5977-4929-8919-a2152ddc7285" />
+
 ---
 
 ### Задание 82: Приложение "Контакты"
+<img width="433" height="607" alt="image" src="https://github.com/user-attachments/assets/496324c8-f2e3-4c03-a622-7452f1f6da1d" />
+<img width="446" height="650" alt="image" src="https://github.com/user-attachments/assets/e2c16464-aa9b-494c-a2f8-87f8f35a4a26" />
+<img width="463" height="705" alt="image" src="https://github.com/user-attachments/assets/e3a220e7-0923-448c-a1bb-86ecbcb0d085" />
+
 ---
 
 ### Задание 83: Приложение "Заметки"
+<img width="451" height="606" alt="image" src="https://github.com/user-attachments/assets/a1dbf0ba-cf8f-447f-a049-0be508c7f612" />
+<img width="478" height="601" alt="image" src="https://github.com/user-attachments/assets/0e225d3f-deea-401e-b1a2-aec26c8d27f4" />
+
+
 ---
 
 ### Задание 84: Приложение "Опрос/Анкета"
+<img width="507" height="839" alt="image" src="https://github.com/user-attachments/assets/8e4d940a-24bb-4cbd-829a-4ea81ad9debf" />
+<img width="592" height="506" alt="image" src="https://github.com/user-attachments/assets/7ae6f358-aa83-438d-abf9-e983175abd4f" />
+
 ---
 
 ### Задание 85: Приложение "Настройки"
+<img width="422" height="454" alt="image" src="https://github.com/user-attachments/assets/bfd25898-1224-46ef-af63-726540074541" />
+<img width="441" height="245" alt="image" src="https://github.com/user-attachments/assets/ce54d9f5-e616-4d77-825f-b698a7c6e1a6" />
 
 ---
 
 ### Задание 86: Приложение "Чат"
+<img width="513" height="689" alt="image" src="https://github.com/user-attachments/assets/23de0206-75dd-4bce-bc69-05a45ac0c92b" />
+<img width="422" height="640" alt="image" src="https://github.com/user-attachments/assets/b608bfba-bbfe-4214-b484-9167bfe538f7" />
 
 ---
 
 ### Задание 87: Приложение "Задачник"
+<img width="1081" height="606" alt="image" src="https://github.com/user-attachments/assets/b8867a66-1c9e-4849-b7c6-496d2add9019" />
+<img width="1076" height="579" alt="image" src="https://github.com/user-attachments/assets/212be256-ce24-4c0d-9435-f19ec6fecb5d" />
+<img width="1135" height="608" alt="image" src="https://github.com/user-attachments/assets/1681a5ff-e348-479b-b6a2-9168a6599694" />
+<img width="1105" height="645" alt="image" src="https://github.com/user-attachments/assets/9bfc45dc-fe72-4aaf-9638-52f5c34fbc5d" />
 
 
 ---
 
 ### Задание 88: Приложение "Расписание"
+<img width="486" height="662" alt="image" src="https://github.com/user-attachments/assets/c9faa0ca-7c26-485c-9716-fbfae1b5869e" />
+<img width="500" height="769" alt="image" src="https://github.com/user-attachments/assets/8bbe7c82-d6ed-441c-8a53-3c4a7668a611" />
+
 
 
 ---
 
 ### Задание 89: Приложение "Бюджет"
+<img width="510" height="821" alt="image" src="https://github.com/user-attachments/assets/09ffa679-d441-4ac3-83c2-723ce790d6bf" />
+<img width="491" height="848" alt="image" src="https://github.com/user-attachments/assets/3aafc3b8-1f9f-4cae-8cd5-ab67dd6a3473" />
 
 
 ---
 
 ### Задание 90: Приложение "Книга"
+<img width="518" height="619" alt="image" src="https://github.com/user-attachments/assets/b9024872-d29d-4160-89fd-89f5c4bf4fb8" />
+<img width="548" height="643" alt="image" src="https://github.com/user-attachments/assets/5269513c-8896-4b8d-a88c-de160d31f1c3" />
+<img width="451" height="607" alt="image" src="https://github.com/user-attachments/assets/b13ddba8-b58b-46bf-bf18-cfad5e71fbd2" />
+<img width="426" height="570" alt="image" src="https://github.com/user-attachments/assets/c8009d57-6793-4feb-af5f-ee6aac534ca7" />
 
 
 ---
 
 ### Задание 91: Приложение "Опубликованные работы"
 
+<img width="466" height="844" alt="image" src="https://github.com/user-attachments/assets/8fd90f5a-186f-4696-9de0-1ac143a27c87" />
+<img width="459" height="518" alt="image" src="https://github.com/user-attachments/assets/f256bc89-f9c0-425a-8c09-8c3fb5ca64ef" />
+<img width="462" height="387" alt="image" src="https://github.com/user-attachments/assets/9023bc47-daaa-4193-bc0f-065b648e001e" />
+<img width="450" height="361" alt="image" src="https://github.com/user-attachments/assets/4a9f2495-d338-491c-8ef7-5634995ebb59" />
 
 ---
 
 ### Задание 92: Приложение "Мессенджер"
+<img width="504" height="496" alt="image" src="https://github.com/user-attachments/assets/a4a21852-8f98-4b84-a251-26abfab3469a" />
+<img width="478" height="610" alt="image" src="https://github.com/user-attachments/assets/9bd6f198-e3f6-465f-b023-52f7d985d85f" />
 
 
 ---
 
 ### Задание 93: Приложение "Магазин"
+<img width="460" height="828" alt="image" src="https://github.com/user-attachments/assets/36ce7b72-e595-4f4f-bc5f-7be03390e544" />
+<img width="484" height="494" alt="image" src="https://github.com/user-attachments/assets/b499035c-ea92-49dc-856d-ba0182fd3586" />
 
 
 ---
 
 ### Задание 94: Приложение "Карты"
+<img width="385" height="444" alt="image" src="https://github.com/user-attachments/assets/d2ee3bb9-bee5-48bd-8d7d-aa51d50b5fff" />
+<img width="468" height="557" alt="image" src="https://github.com/user-attachments/assets/9190868e-fe39-4442-9b4c-140798b6af72" />
 
 
 ---
 
 
 ### Задание 95: Приложение "Новости"
+<img width="512" height="734" alt="image" src="https://github.com/user-attachments/assets/2ae39cf8-b0fe-44ae-b81a-7d7d1f209a0f" />
+<img width="463" height="328" alt="image" src="https://github.com/user-attachments/assets/5b7ea82c-8d8a-45c8-8dce-3fe91be0c5a6" />
+<img width="463" height="332" alt="image" src="https://github.com/user-attachments/assets/4c801d1f-578f-4cc3-8e0e-6e30f489b7e1" />
 
 
 ---
 
 
 ### Задание 96: Приложение "Калькулятор кредита"
+<img width="457" height="461" alt="image" src="https://github.com/user-attachments/assets/0ce5c794-2aaf-41f8-b3b7-5651ac5f22b8" />
+<img width="435" height="497" alt="image" src="https://github.com/user-attachments/assets/5a31ddd7-60e0-41a0-9cb4-255af4b708af" />
 
 
 ---
 
 ### Задание 97: Приложение "Таймер"
 
+<img width="483" height="440" alt="image" src="https://github.com/user-attachments/assets/1b6605d8-f140-4afb-b32f-ec9780559954" />
+<img width="519" height="416" alt="image" src="https://github.com/user-attachments/assets/f1a113cc-7bcf-44e2-9b00-13e0433dd86c" />
 
 
 ---
 
 ### Задание 98: Приложение "Угадай число"
+<img width="465" height="373" alt="image" src="https://github.com/user-attachments/assets/76df6f5c-1217-4e14-bed6-d0f4380754cc" />
 
 
 ---
 
 ### Задание 99: Приложение "Тесты/Квиз"
+<img width="465" height="382" alt="image" src="https://github.com/user-attachments/assets/74036108-9724-4318-817b-fca7b9c6c6fd" />
+<img width="471" height="386" alt="image" src="https://github.com/user-attachments/assets/809a6356-421c-4b62-9033-9f28f87a2698" />
+<img width="535" height="420" alt="image" src="https://github.com/user-attachments/assets/27dd85ea-6870-4299-a874-cf3b27099580" />
+<img width="431" height="283" alt="image" src="https://github.com/user-attachments/assets/bde2cf39-e543-45fb-a356-19522a58ae59" />
 
 
 ---
 
 ### Задание 100: Приложение "Социальная сеть" (Микро версия)
+<img width="551" height="664" alt="image" src="https://github.com/user-attachments/assets/ca936419-0555-4a27-9e16-6c6431943c1c" />
+<img width="487" height="637" alt="image" src="https://github.com/user-attachments/assets/52263cdb-0700-4ff7-a17f-a04fac63b76f" />
 
 
 
