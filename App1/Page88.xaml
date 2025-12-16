@@ -9,6 +9,75 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <StackPanel 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Top" 
+            Spacing="15"
+            Width="400">
 
+            <TextBlock Text="Дни недели:" FontSize="18" FontWeight="Bold"/>
+            <Grid x:Name="DaysGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Border x:Name="MondayBorder" Grid.Column="0" Padding="5" BorderThickness="1" BorderBrush="Transparent">
+                    <TextBlock Text="Пн" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+                <Border x:Name="TuesdayBorder" Grid.Column="1" Padding="5" BorderThickness="1" BorderBrush="Transparent">
+                    <TextBlock Text="Вт" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+                <Border x:Name="WednesdayBorder" Grid.Column="2" Padding="5" BorderThickness="1" BorderBrush="Transparent">
+                    <TextBlock Text="Ср" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+                <Border x:Name="ThursdayBorder" Grid.Column="3" Padding="5" BorderThickness="1" BorderBrush="Transparent">
+                    <TextBlock Text="Чт" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+                <Border x:Name="FridayBorder" Grid.Column="4" Padding="5" BorderThickness="1" BorderBrush="Transparent">
+                    <TextBlock Text="Пт" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+                <Border x:Name="SaturdayBorder" Grid.Column="5" Padding="5" BorderThickness="1" BorderBrush="Transparent">
+                    <TextBlock Text="Сб" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+                <Border x:Name="SundayBorder" Grid.Column="6" Padding="5" BorderThickness="1" BorderBrush="Transparent">
+                    <TextBlock Text="Вс" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+            </Grid>
+
+            <TextBlock Text="Время события:" FontSize="16"/>
+            <TextBox 
+                x:Name="EventTimeTextBox" 
+                PlaceholderText="Введите описание события"
+                Height="40"
+                Width="350"/>
+
+            <TextBlock Text="Дата:" FontSize="16"/>
+            <DatePicker 
+                x:Name="DatePicker"
+                Width="350"
+                DateChanged="DatePicker_DateChanged"/>
+
+            <TextBlock Text="Время:" FontSize="16"/>
+            <TimePicker 
+                x:Name="TimePicker"
+                Width="350"/>
+
+            <Button 
+                Content="Добавить событие"
+                Click="AddEvent_Click"
+                Width="150"/>
+
+            <TextBlock Text="События:" FontSize="16" FontWeight="Bold" Margin="0,20,0,0"/>
+            <StackPanel x:Name="EventsPanel" Spacing="5"/>
+
+        </StackPanel>
     </Grid>
 </Page>

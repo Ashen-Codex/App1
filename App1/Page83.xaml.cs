@@ -1,30 +1,67 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
+﻿using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
-
-// Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace App1
 {
-    /// <summary>
-    /// Пустая страница, которую можно использовать саму по себе или для перехода внутри фрейма.
-    /// </summary>
     public sealed partial class Page83 : Page
     {
+        private ScrollViewer scrollViewer;
+
         public Page83()
         {
             this.InitializeComponent();
+            scrollViewer = NotesPanel.Parent as ScrollViewer;
+            LoadNotes();
+        }
+
+        private void LoadNotes()
+        {
+            // Добавляем тестовые заметки
+            AddNote("Первая заметка");
+            AddNote("Вторая заметка");
+            AddNote("Третья заметка");
+        }
+
+        private void SaveNote_Click(object sender, RoutedEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(NoteTextBox.Text))
+            {
+                AddNote(NoteTextBox.Text);
+
+                NoteTextBox.Text = string.Empty;
+
+                if (scrollViewer != null)
+                {
+                    scrollViewer.ChangeView(null, scrollViewer.ExtentHeight, null);
+                }
+            }
+        }
+
+        private void AddNote(string text)
+        {
+            var noteCard = new Border
+            {
+                Background = new Windows.UI.Xaml.Media.SolidColorBrush(Windows.UI.Colors.LightGray),
+                CornerRadius = new Windows.UI.Xaml.CornerRadius(8),
+                Padding = new Windows.UI.Xaml.Thickness(10),
+                Margin = new Windows.UI.Xaml.Thickness(0, 5, 0, 5)
+            };
+
+            var noteContent = new StackPanel { Spacing = 5 };
+            
+            var noteText = new TextBlock
+            {
+                Text = text,
+                FontSize = 16,
+                Foreground = new SolidColorBrush(Colors.Black)
+            };
+            noteContent.Children.Add(noteText);
+
+            noteCard.Child = noteContent;
+
+            NotesPanel.Children.Add(noteCard);
         }
     }
 }

@@ -9,6 +9,65 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <StackPanel 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Top" 
+            Spacing="15"
+            Width="400">
 
+            <TextBlock 
+                Text="Поиск фото:"
+                FontSize="16"
+                FontWeight="Bold"/>
+            <TextBox 
+                x:Name="SearchTextBox" 
+                PlaceholderText="Введите название фото"
+                Height="40"
+                Width="350"/>
+
+            <TextBlock 
+                Text="Фильтры:"
+                FontSize="16"
+                FontWeight="Bold"
+                Margin="0,10,0,0"/>
+            <ComboBox 
+                x:Name="FilterComboBox"
+                PlaceholderText="Выберите фильтр">
+                <ComboBoxItem Content="Все"/>
+                <ComboBoxItem Content="Пейзажи"/>
+                <ComboBoxItem Content="Портреты"/>
+                <ComboBoxItem Content="Города"/>
+            </ComboBox>
+
+            <TextBlock 
+                Text="Галерея фото:"
+                FontSize="18"
+                FontWeight="Bold"
+                Margin="0,20,0,0"/>
+
+            <ScrollViewer 
+                Height="300"
+                Width="350"
+                VerticalScrollBarVisibility="Auto">
+
+                <StackPanel 
+                    x:Name="PhotosPanel"
+                    Orientation="Horizontal"
+                    Spacing="10"/>
+
+            </ScrollViewer>
+
+            <TextBlock 
+                Text="Полный просмотр:"
+                FontSize="18"
+                FontWeight="Bold"
+                Margin="0,20,0,0"/>
+            <Image 
+                x:Name="FullViewImage"
+                Width="350"
+                Height="200"
+                Stretch="UniformToFill"/>
+
+        </StackPanel>
     </Grid>
 </Page>

@@ -1,30 +1,55 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
+﻿using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
-
-// Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace App1
 {
-    /// <summary>
-    /// Пустая страница, которую можно использовать саму по себе или для перехода внутри фрейма.
-    /// </summary>
     public sealed partial class Page92 : Page
     {
         public Page92()
         {
             this.InitializeComponent();
+            LoadContacts();
+        }
+
+        private void LoadContacts()
+        {
+            AddContact("Иван Иванов");
+            AddContact("Анна Петрова");
+            AddContact("Сергей Сидоров");
+        }
+
+        private void AddContact(string name)
+        {
+            var contact = new Button
+            {
+                Content = name,
+                Width = 350,
+                Height = 40
+            };
+            contact.Click += Contact_Click;
+            ContactsPanel.Children.Add(contact);
+        }
+
+        private void Contact_Click(object sender, RoutedEventArgs e)
+        {
+            var button = sender as Button;
+            MessageTextBlock.Text = $"Выбран контакт: {button.Content}";
+        }
+
+        private void Send_Click(object sender, RoutedEventArgs e)
+        {
+            string message = MessageTextBox.Text;
+            var time = TimePicker.Time;
+
+            if (!string.IsNullOrEmpty(message))
+            {
+                MessageTextBlock.Text = $"Сообщение: {message}\nВремя: {time:hh\\:mm\\:ss}";
+                MessageTextBox.Text = string.Empty;
+            }
+            else
+            {
+                MessageTextBlock.Text = "Введите сообщение!";
+            }
         }
     }
 }

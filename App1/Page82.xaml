@@ -9,6 +9,64 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <StackPanel 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Top" 
+            Spacing="15"
+            Width="400">
 
+            <TextBlock 
+                Text="Поиск контакта:"
+                FontSize="16"
+                FontWeight="Bold"/>
+            <TextBox 
+                x:Name="SearchTextBox" 
+                PlaceholderText="Введите имя контакта"
+                Height="40"
+                Width="350"/>
+
+            <StackPanel 
+                Orientation="Horizontal"
+                Spacing="10"
+                Margin="0,10,0,0">
+                <Button 
+                    Content="Добавить"
+                    Click="AddContact_Click"
+                    Width="100"/>
+                <Button 
+                    Content="Удалить"
+                    Click="DeleteContact_Click"
+                    Width="100"/>
+            </StackPanel>
+
+            <TextBlock 
+                Text="Список контактов:"
+                FontSize="18"
+                FontWeight="Bold"
+                Margin="0,20,0,0"/>
+
+            <ScrollViewer 
+                Height="300"
+                Width="350"
+                VerticalScrollBarVisibility="Auto">
+
+                <StackPanel 
+                    x:Name="ContactsPanel"
+                    Spacing="10"/>
+
+            </ScrollViewer>
+
+            <TextBlock 
+                Text="Детали контакта:"
+                FontSize="18"
+                FontWeight="Bold"
+                Margin="0,20,0,0"/>
+            <TextBlock 
+                x:Name="ContactDetailsTextBlock"
+                Text=""
+                FontSize="16"
+                Foreground="DarkBlue"/>
+
+        </StackPanel>
     </Grid>
 </Page>

@@ -9,6 +9,54 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <NavigationView 
+            x:Name="NavigationView"
+            PaneDisplayMode="Left"
+            IsSettingsVisible="False"
+            SelectionChanged="NavigationView_SelectionChanged">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="Все задачи" Tag="All"/>
+                <NavigationViewItem Content="Работа" Tag="Work"/>
+                <NavigationViewItem Content="Личное" Tag="Personal"/>
+                <NavigationViewItem Content="Учеба" Tag="Study"/>
+            </NavigationView.MenuItems>
 
+            <StackPanel 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Top" 
+                Spacing="15"
+                Width="400">
+
+                <TextBlock Text="Поиск:" FontSize="16"/>
+                <TextBox 
+                    x:Name="SearchTextBox" 
+                    PlaceholderText="Введите текст для поиска"
+                    Height="40"
+                    Width="350"/>
+
+                <TextBlock Text="Задачи:" FontSize="18" FontWeight="Bold" Margin="0,20,0,0"/>
+                <ListView 
+                    x:Name="TasksListView"
+                    Height="300"
+                    Width="400"/>
+
+                <TextBlock Text="Действия:" FontSize="16" FontWeight="Bold" Margin="0,20,0,0"/>
+                <StackPanel Orientation="Horizontal" Spacing="10">
+                    <Button 
+                        Content="Добавить"
+                        Click="AddTask_Click"
+                        Width="100"/>
+                    <Button 
+                        Content="Удалить"
+                        Click="DeleteTask_Click"
+                        Width="100"/>
+                    <Button 
+                        Content="Отметить"
+                        Click="MarkTask_Click"
+                        Width="100"/>
+                </StackPanel>
+
+            </StackPanel>
+        </NavigationView>
     </Grid>
 </Page>

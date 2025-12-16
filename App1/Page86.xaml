@@ -9,6 +9,50 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <StackPanel 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Top" 
+            Spacing="15"
+            Width="400">
 
+            <TextBlock 
+                Text="Пользователь: Иван Иванов"
+                FontSize="16"
+                Foreground="DarkBlue"/>
+
+            <TextBlock 
+                Text="Сообщения:"
+                FontSize="18"
+                FontWeight="Bold"
+                Margin="0,20,0,0"/>
+
+            <ScrollViewer 
+                Height="300"
+                Width="350"
+                VerticalScrollBarVisibility="Auto">
+
+                <StackPanel 
+                    x:Name="MessagesPanel"
+                    Spacing="5"/>
+
+            </ScrollViewer>
+
+            <TextBlock 
+                Text="Введите сообщение:"
+                FontSize="16"
+                Margin="0,20,0,0"/>
+
+            <TextBox 
+                x:Name="MessageTextBox" 
+                PlaceholderText="Введите текст сообщения"
+                Height="100"
+                Width="350"/>
+
+            <Button 
+                Content="Отправить"
+                Click="SendMessage_Click"
+                Width="150"/>
+
+        </StackPanel>
     </Grid>
 </Page>

@@ -15,7 +15,6 @@ namespace App1
 
         private void InterestRateSlider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
         {
-            // Обновляем текст рядом со слайдером
             InterestRateTextBlock.Text = $"{e.NewValue:F1}%";
         }
 

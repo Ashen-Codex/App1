@@ -8,7 +8,80 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Page.Resources>
+        <Style x:Key="DarkThemeTextBlock" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="LightGray"/>
+        </Style>
+        <Style x:Key="DarkThemeButton" TargetType="Button">
+            <Setter Property="Background" Value="DarkGray"/>
+            <Setter Property="Foreground" Value="LightGray"/>
+        </Style>
+    </Page.Resources>
 
+    <Grid>
+        <StackPanel 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Top" 
+            Spacing="15"
+            Width="400">
+
+            <TextBlock 
+                x:Name="BookTextBlock"
+                Text="Это начало книги. Здесь будет текст главы 1."
+                FontSize="16"
+                Foreground="Black"
+                TextWrapping="Wrap"/>
+
+            <TextBlock Text="Прокрутка:" FontSize="16"/>
+            <ScrollViewer 
+                Height="200"
+                VerticalScrollBarVisibility="Auto">
+                <TextBlock 
+                    x:Name="ScrollTextBlock"
+                    Text="Это длинный текст, который можно прокручивать. Он может содержать много абзацев и параграфов. Это позволяет читателю удобно просматривать книгу на экране устройства." 
+                    FontSize="16"
+                    Foreground="Black"
+                    TextWrapping="Wrap"/>
+            </ScrollViewer>
+
+            <TextBlock Text="Размер шрифта:" FontSize="16"/>
+            <Slider 
+                x:Name="FontSizeSlider"
+                Minimum="10"
+                Maximum="30"
+                Value="16"
+                Width="350"
+                ValueChanged="FontSizeSlider_ValueChanged"/>
+
+            <TextBlock Text="Тёмный режим:" FontSize="16"/>
+            <ToggleSwitch 
+                x:Name="DarkModeToggle"
+                OnContent="Включено"
+                OffContent="Выключено"
+                Toggled="DarkModeToggle_Toggled"/>
+
+            <TextBlock Text="Навигация:" FontSize="16"/>
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <Button 
+                    x:Name="Chapter1Button"
+                    Content="Глава 1"
+                    Click="Chapter1_Click"
+                    Width="100"
+                    Style="{StaticResource DarkThemeButton}"/>
+                <Button 
+                    x:Name="Chapter2Button"
+                    Content="Глава 2"
+                    Click="Chapter2_Click"
+                    Width="100"
+                    Style="{StaticResource DarkThemeButton}"/>
+                <Button 
+                    x:Name="Chapter3Button"
+                    Content="Глава 3"
+                    Click="Chapter3_Click"
+                    Width="100"
+                    Style="{StaticResource DarkThemeButton}"/>
+            </StackPanel>
+
+        </StackPanel>
     </Grid>
 </Page>

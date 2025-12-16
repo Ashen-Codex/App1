@@ -9,6 +9,69 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <StackPanel 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Top" 
+            Spacing="15"
+            Width="400">
 
+            <TextBlock 
+                Text="Вопрос 1: Какой ваш любимый цвет?"
+                FontSize="16"
+                FontWeight="Bold"/>
+            <RadioButton 
+                Content="Красный"
+                GroupName="ColorGroup"/>
+            <RadioButton 
+                Content="Синий"
+                GroupName="ColorGroup"/>
+            <RadioButton 
+                Content="Зелёный"
+                GroupName="ColorGroup"/>
+            <RadioButton 
+                Content="Жёлтый"
+                GroupName="ColorGroup"/>
+
+            <TextBlock 
+                Text="Вопрос 2: Какие фрукты вы любите?"
+                FontSize="16"
+                FontWeight="Bold"
+                Margin="0,20,0,0"/>
+            <CheckBox 
+                Content="Яблоко"/>
+            <CheckBox 
+                Content="Банан"/>
+            <CheckBox 
+                Content="Апельсин"/>
+            <CheckBox 
+                Content="Груша"/>
+
+            <TextBlock 
+                Text="Вопрос 3: Почему вы выбрали этот цвет?"
+                FontSize="16"
+                FontWeight="Bold"
+                Margin="0,20,0,0"/>
+            <TextBox 
+                PlaceholderText="Введите ваш ответ"
+                Height="100"
+                Width="350"/>
+
+            <TextBlock 
+                Text="Прогресс:"
+                FontSize="16"
+                FontWeight="Bold"
+                Margin="0,20,0,0"/>
+            <ProgressBar 
+                x:Name="Progressbar"
+                Height="10"
+                Width="350"/>
+
+            <Button 
+                Content="Отправить"
+                Click="SubmitAnswers_Click"
+                Width="150"
+                Margin="0,20,0,0"/>
+
+        </StackPanel>
     </Grid>
 </Page>

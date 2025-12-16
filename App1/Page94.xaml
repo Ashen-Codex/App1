@@ -9,6 +9,46 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-       
+        <StackPanel 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Top" 
+            Spacing="15"
+            Width="400">
+
+            <TextBlock Text="Маршрут:" FontSize="16"/>
+            <ComboBox 
+                x:Name="RouteComboBox"
+                SelectionChanged="Route_SelectionChanged"
+                PlaceholderText="Выберите маршрут">
+                <x:String>Москва → Санкт-Петербург</x:String>
+                <x:String>Москва → Новосибирск</x:String>
+                <x:String>Москва → Владивосток</x:String>
+            </ComboBox>
+
+            <TextBlock 
+                x:Name="DistanceTextBlock"
+                Text=""
+                FontSize="16"
+                Foreground="DarkBlue"/>
+
+            <TextBlock Text="Карта:" FontSize="16" FontWeight="Bold"/>
+            <Image 
+                x:Name="MapImage"
+                Width="350"
+                Height="200"
+                Stretch="UniformToFill"
+                Visibility="Collapsed"/>
+
+            <Button Content="Начать маршрут" Click="StartRoute_Click" Width="150"/>
+            <Button Content="Сбросить маршрут" Click="ResetRoute_Click" Width="150"/>
+
+            <TextBlock Text="Загрузка:" FontSize="16" FontWeight="Bold"/>
+            <ProgressRing 
+                x:Name="ProgressRing"
+                IsActive="False"
+                Width="50"
+                Height="50"/>
+
+        </StackPanel>
     </Grid>
 </Page>
