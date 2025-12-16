@@ -1,30 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
+﻿using System.Linq;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-
-// Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace App1
 {
-    /// <summary>
-    /// Пустая страница, которую можно использовать саму по себе или для перехода внутри фрейма.
-    /// </summary>
     public sealed partial class Page58 : Page
     {
         public Page58()
         {
             this.InitializeComponent();
-        } 
+
+            NumberOnlyTextBox.TextChanged += NumberOnlyTextBox_TextChanged;
+        }
+
+        private void NumberOnlyTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            var textBox = sender as TextBox;
+
+            int selectionStart = textBox.SelectionStart;
+            string filtered = new string(textBox.Text.Where(char.IsDigit).ToArray());
+            if (textBox.Text != filtered)
+            {
+                textBox.Text = filtered;
+                textBox.SelectionStart = filtered.Length;
+            }
+        }
     }
 }
+

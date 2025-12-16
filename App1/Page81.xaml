@@ -66,7 +66,7 @@
                 x:Name="FullViewImage"
                 Width="350"
                 Height="200"
-                Stretch="UniformToFill"/>
+                Stretch="Uniform"/>
 
         </StackPanel>
     </Grid>

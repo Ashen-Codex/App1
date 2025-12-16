@@ -5,10 +5,36 @@
     xmlns:local="using:App1"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
 
-    <Grid>
+    <ScrollViewer>
+        <StackPanel Margin="40" Width="400">
+            <TextBlock Text="Регистрация" FontSize="28" Margin="0,0,0,20"/>
 
-    </Grid>
+            <TextBlock Text="Имя:"/>
+            <TextBox x:Name="NameTextBox" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Email:"/>
+            <TextBox x:Name="EmailTextBox" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Пароль:"/>
+            <PasswordBox x:Name="PasswordBox" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Страна:"/>
+            <ComboBox x:Name="CountryComboBox" Margin="0,0,0,10">
+                <ComboBoxItem Content="Россия"/>
+                <ComboBoxItem Content="США"/>
+                <ComboBoxItem Content="Германия"/>
+                <ComboBoxItem Content="Китай"/>
+                <ComboBoxItem Content="Япония"/>
+            </ComboBox>
+
+            <CheckBox x:Name="AgreeCheckBox" Content="Согласен с условиями" Margin="0,0,0,10"/>
+
+            <Button Content="Зарегистрироваться" Click="RegisterButton_Click" Margin="0,10,0,10"/>
+
+            <TextBlock x:Name="ResultTextBlock" Foreground="Red" TextWrapping="Wrap"/>
+        </StackPanel>
+    </ScrollViewer>
 </Page>
+

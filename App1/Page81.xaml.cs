@@ -15,6 +15,7 @@ namespace App1
     public sealed partial class Page81 : Page
     {
         private ScrollViewer scrollViewer;
+
         public Page81()
         {
             this.InitializeComponent();
@@ -24,10 +25,9 @@ namespace App1
 
         private void LoadPhotos()
         {
-            // Добавляем тестовые фото
-            AddPhoto("Пейзаж", "ms-appx:///Assets/icon228.png");
-            AddPhoto("Портрет", "ms-appx:///Assets/icon322.png");
-            AddPhoto("Город", "ms-appx:///Assets/StoreLogo.png");
+            AddPhoto("Пейзаж", "ms-appx:///Assets/Peyzasgh.jpg");
+            AddPhoto("Портрет", "ms-appx:///Assets/Portret.jpg");
+            AddPhoto("Город", "ms-appx:///Assets/Gorod.jpg");
         }
 
         private void AddPhoto(string category, string imagePath)
@@ -63,7 +63,6 @@ namespace App1
             photoContent.Children.Add(categoryText);
 
             photoCard.Child = photoContent;
-
             PhotosPanel.Children.Add(photoCard);
         }
 
@@ -86,6 +85,8 @@ namespace App1
                     photoCard.Visibility = photo.Category.ToLower().Contains(searchText) ? Visibility.Visible : Visibility.Collapsed;
                 }
             }
+
+            PhotosPanel.UpdateLayout();
         }
 
         private void FilterComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -103,6 +104,8 @@ namespace App1
                         photoCard.Visibility = filterText == "Все" || photo.Category == filterText ? Visibility.Visible : Visibility.Collapsed;
                     }
                 }
+
+                PhotosPanel.UpdateLayout();
             }
         }
     }
