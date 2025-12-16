@@ -11,31 +11,7 @@ namespace App1
         {
             InitializeComponent();
 
-            // Список имён
-            string[] names = { "Элемент 1", "Элемент 2", "Элемент 3" };
-
-            foreach (string name in names)
-            {
-                // Создаём TextBlock
-                var textBlock = new TextBlock
-                {
-                    Text = name,
-                    FontSize = 16,
-                    Margin = new Thickness(5)
-                };
-
-                // Оборачиваем в Border
-                var border = new Border
-                {
-                    BorderBrush = new SolidColorBrush(Windows.UI.Colors.Blue),
-                    BorderThickness = new Thickness(1),
-                    Padding = new Thickness(10),
-                    Child = textBlock
-                };
-
-                // Добавляем в ItemsControl
-                MyItemsControl.Items.Add(border);
+            
             }
         }
     }
-}

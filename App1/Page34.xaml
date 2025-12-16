@@ -8,9 +8,12 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-     
-         <TextBlock x:Name="MyTextBlock" FontSize="18" />
-            
-    </Grid>
+    
+            <Grid>
+                <TextBlock Text="{x:Bind ViewModel.Name, Mode=OneWay}" 
+                   FontSize="18"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+            </Grid>
+        
 </Page>

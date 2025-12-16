@@ -9,6 +9,16 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+       
+    
 
+            <StackPanel Padding="20" Spacing="10">
+                <TextBox x:Name="SourceTextBox" 
+                 PlaceholderText="Введите текст..."/>
+                <TextBlock Text="{Binding ElementName=SourceTextBox, Path=Text}"
+                   FontSize="18"
+                   Foreground="Blue"/>
+            </StackPanel>
+       
     </Grid>
 </Page>

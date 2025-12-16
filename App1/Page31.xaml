@@ -9,6 +9,21 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <ItemsControl x:Name="MyItemsControl" />
+        <StackPanel>
+            <Border BorderBrush="Blue" BorderThickness="1" Padding="10" Margin="5">
+                <TextBlock Text="Попуск" FontSize="16"/>
+            </Border>
+
+            <Border BorderBrush="Blue" BorderThickness="1" Padding="10" Margin="5">
+                <TextBlock Text="Бан" FontSize="16"/>
+            </Border>
+
+            <Border BorderBrush="Blue" BorderThickness="1" Padding="10" Margin="5">
+                <TextBlock Text="Пепел" FontSize="16"/>
+            </Border>
+
+            
+            
+        </StackPanel>
     </Grid>
 </Page>

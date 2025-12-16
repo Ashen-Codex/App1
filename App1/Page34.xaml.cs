@@ -23,16 +23,13 @@ namespace App1
     /// </summary>
     public sealed partial class Page34 : Page
     {
+         public ViewModel ViewModel { get; set; } 
         public Page34()
         {
-            this.InitializeComponent();
-        
-       
-
-                // Вручную задаём значение
-                string name = "Привет из кода!";
-                MyTextBlock.Text = name;
             
+            ViewModel = new ViewModel(); 
+            InitializeComponent();
+
         }
     }
 }

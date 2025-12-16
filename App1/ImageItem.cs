@@ -8,6 +8,7 @@ namespace App1
 {
     public class ImageItem
     {
+        public string ImagePath { get; set; }
         public string ImageSource { get; set; }
     }
 }   
